@@ -288,7 +288,7 @@
 
 			<h4 class="storyParagraphTitle"><span class="storyDateStage">19<sup>ème</sup> journée – dimanche 21 juin :</span> Monêtier-les-Bains – Valloire (1400 m de dénivelé – 26 km)</h4>
 
-			<p>Un peu après 8 h, je décide surle conseil de la propriétaire du refuge, de suivre une variante à l'itinéraire prévu pour rejoindre Guillestre. Le trajet initial prévoyait 2 petites ascensions de moins de 150 m de dénivelé avant une très longue descente sur Guillestre. En choisissant la variante,je pourrai apercevoir le Mont Viso, qui domine les alentours du haut de ses 3841 m, en plus de passer davantage de crêtes. Après avoir pris des photos du panaorama depuis le Balcon de Furfande, cette fois sous le soleil, je traverse l'alpage du même nom. Puis débute l'ascension du Col Saint-Antoine, d'où on aperçoit le Mont Viso. Mais entre temps, les nuages ont déjà recouvert les sommets environnants. Dommage. Je pousuis mon chemin en descendant rapidement au Lac du Lauzet, dans un coin pittoresque où je peux voir de près quelques sommets du Queyras. De là, nouvelle courte montée vers le Col de Moussière, qui offre un joli panorama sur la vallée de la Durance. Les sommets des Ecrins, eux sont malheureusement aussi souq les nuages. J'attaque alors la longue descente vers le Guil, où j'arrive après être passé juste au-dessus de la forteresse de Mont-Dauphin. Une très courte montée, et c'est l'arrivée sur Guillestre, un peu après 15 h. Je n'ai plus qu'à aller planter ma tente dans un camping, avant de prendre un jour de repos le lendemain.</p>
+			<p>TO DO</p>
 
 			<div class="imgCenter">
 				<h3><small>Bivouac</small></h3>

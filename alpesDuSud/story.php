@@ -288,7 +288,7 @@
 
 			<h4 class="storyParagraphTitle"><span class="storyDateStage">19<sup>ème</sup> journée – dimanche 21 juin :</span> Monêtier-les-Bains – Valloire (1400 m de dénivelé – 26 km)</h4>
 
-			<p>TO DO</p>
+			<p>Pour cette dernière étape, je pars plus tôt que lors des précédentes.</p>
 
 			<div class="imgCenter">
 				<h3><small>Bivouac</small></h3>

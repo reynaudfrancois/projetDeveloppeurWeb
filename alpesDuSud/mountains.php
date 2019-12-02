@@ -17,6 +17,13 @@
 				<li>et les Ecrins.</li>
 			</ul>
 
+			<p>Deux autres massifs ont été traversés, mais sur une journée seulement :</p>
+
+			<ul>
+				<li>le Chambeyron, entre le Mercantour et le Queyras,</li>
+				<li>et les Cerces, lors de la dernière étape.</li>
+			</ul>			
+
 		</article>
 
 		<article>
@@ -71,31 +78,49 @@
 
 	<aside>
 
-		<h3 class="subTitle">PAYSAGES</h3>
-		<hr>
+		<div>
 
-		<div class="imgCenter">
-			<h3>ARRIERE-PAYS NICOIS<br>Le Mont Agel</h3>
-			<img src="view/images/imgMountains/1.JPG" class="massifs">
+			<h3 class="subTitle">LES AUTRES MASSIFS</h3>
+			
+			<p><strong>LE CHAMBEYRON</strong> est un massif des Alpes, à cheval sur la France, et surtout l'Italie. Son extrémité Ouest se trouve en France au niveau de la haute vallée de L'Ubaye, entre le Mercantour et le Queyras. Sa plus grande partie se trouve côté Est en Italie, entre le Mercantour, les Alpes Cottiennes (où se trouve le Mont Viso), et la Plaine du Pô.</p>
+
+			<a href="https://fr.wikipedia.org/wiki/Massif_de_Chambeyron" target="new"><small>Source : Wikipedia</small></a>
+			<hr>	
+
+			<p><strong>LES CERCES</strong> sont un massif composé des chaînons du Thabor, du Galibier, de Chaberton et des Rois Mages (Roche Bernaude). Ce massif est entouré de ceux de la Vanoise au Nord, du Mont-Cenis au Nord-Est, des Alpes cottiennes à l'Est, du Queyras et des Écrins au Sud et des Arves à l'Ouest. Il est bordé par l'Arc au Nord (vallée de la Maurienne), la Guisane au Sud, la Doire Ripaire et la Bardonèche à l'Est. Il est également entaillé par la Clarée, la Neuvache et la Neuvachette, ainsi que la Vallée Étroite, qui sont des torrents. </p>
+
+			<a href="https://fr.wikipedia.org/wiki/Massif_des_Cerces" target="new"><small>Source : Wikipedia</small></a>		
+
 		</div>
-		<hr>
 
-		<div class="imgCenter">
-			<h3>MERCANTOUR<br>Le Mont Mounier</h3>
-			<img src="view/images/imgMountains/2.JPG" class="massifs">
+		<div>
+			
+			<h3 class="subTitle">PAYSAGES</h3>
+
+			<div class="imgCenter">
+				<h3>ARRIERE-PAYS NICOIS<br>Le Mont Agel</h3>
+				<img src="view/images/imgMountains/1.JPG" class="massifs">
+			</div>
+			<hr>
+
+			<div class="imgCenter">
+				<h3>MERCANTOUR<br>Le Mont Mounier</h3>
+				<img src="view/images/imgMountains/2.JPG" class="massifs">
+			</div>
+			<hr>
+
+			<div class="imgCenter">
+				<h3>QUEYRAS<br>La Combe du Queyras</h3>
+				<img src="view/images/imgMountains/3.JPG" class="massifs">
+			</div>
+			<hr>
+
+			<div class="imgCenter">
+				<h3>ECRINS<br>Le Mont Pelvoux</h3>
+				<img src="view/images/imgMountains/4.JPG" class="massifs">
+			</div>			
+
 		</div>
-		<hr>
-
-		<div class="imgCenter">
-			<h3>QUEYRAS<br>La Combe du Queyras</h3>
-			<img src="view/images/imgMountains/3.JPG" class="massifs">
-		</div>
-		<hr>
-
-		<div class="imgCenter">
-			<h3>ECRINS<br>Le Mont Pelvoux</h3>
-			<img src="view/images/imgMountains/4.JPG" class="massifs">
-		</div>	
 
 	</aside>
 

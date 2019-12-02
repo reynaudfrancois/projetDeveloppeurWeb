@@ -18,10 +18,10 @@
 			<nav>
 				<a href="index.php">Accueil</a>
 				<a href="mountains.php">Massifs</a>
-				<a href="preparation.php">Préparation</a>
 				<a href="path.php">Itinéraire</a>
 				<a href="story.php">Récit</a>
 				<a href="photos.php">Photos</a>
+				<a href="commentaires.php">Commentaires</a>
 			</nav>
 
 			<div id="title">

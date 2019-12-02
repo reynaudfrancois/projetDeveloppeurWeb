@@ -19,7 +19,7 @@
 			<button id="pause">Pause</button>
 			<button id="play">Lecture</button>
 
-			<script type="text/javascript" src="view/javascript/script.js"></script>				
+			<script type="text/javascript" src="view/javascript/slider.js"></script>				
 		</div>
 
 	</main>

@@ -1,26 +1,4 @@
-		<footer>
-
-			<form action="commentairePost.php" method="POST">
-				<div>
-					<label for="name">Votre nom *</label> 
-					<input type="text" name="name" id="name" size="70" placeholder=" Nom *" value="" />
-				</div>
-				<div>
-					<label for="firstname">Votre prénom *</label> 
-					<input type="text" name="firstname" id="firstname" size="70" placeholder=" Prénom*" value="" />
-				</div>
-				<div>
-					<label for="email">Votre email</label> 
-					<input type="email" name="email" id="email" size="70" placeholder=" Email" value="" />
-				</div>
-				<div>
-					<label for="comment">Votre commentaire *</label>
-					<textarea name="comment" id="comment" placeholder=" Commentaire *"></textarea>
-				</div>				
-				<div>
-					<input type="submit" value="Valider" />
-				</div>
-			</form>
+		<footer id="footer">
 			
 			<div id="findMe">				
 				<h3>RETROUVEZ-MOI</h3>

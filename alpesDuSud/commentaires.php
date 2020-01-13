@@ -1,17 +1,25 @@
 <?php 
-	include "header.inc.php";
-	include "appelBDD.php";
+include "header.inc.php";
+include "appelBDD.php";
+include "minichatPOST.php";
+include "countComments.php";
 ?> 
 
 <main class="general" id="commentaires">
 
 	<div>		
 			
-		<h2>COMMENTAIRES</h2>				
+		<h2 class="generalTitle">LES COMMENTAIRES</h2>				
 
-		<button class="button" id="addComment">AJOUTER UN COMMENTAIRE<br><i class="fas fa-angle-down" id="faAngle"></i></button>
+		<button class="button" id="addComment">AJOUTER UN COMMENTAIRE<br /><i class="fas fa-angle-down" id="faAngle"></i></button>
 
-		<form id="commentForm" action="minichatPOST.php" method="post" role="form">
+		<form id="commentForm" action="commentaires.php" method="post" role="form">
+
+			<div id="error" style="color: <?php if ($error != '') {echo 'red;';} ?>">
+				<?php
+					echo $error;
+				?>
+			</div>
 		
 			<div class="field contactInformations">
 				<label for="name">Votre nom *</label>
@@ -45,8 +53,8 @@
 					
 	</div>
 
-</main>	
+	<?php include "affichageDesMessages.php"; ?>
 
-<?php include "affichageDesMessages.php"; ?>
+</main>	
 
 <?php include "footer.inc.php"; ?>

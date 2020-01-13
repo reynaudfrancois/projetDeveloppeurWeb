@@ -1,7 +1,7 @@
 <?php
 
 	// on prépare la requête de compatge des messages
-	$retour=$bdd->prepare("SELECT COUNT(*) AS nbArticles FROM vue_article");
+	$retour=$db->prepare("SELECT COUNT(*) AS nbArticles FROM view_abstracts");
 
 	//on execute la requete
 	$retour->execute();

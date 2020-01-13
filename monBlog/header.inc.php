@@ -2,12 +2,12 @@
 <html lang="fr">
 
 	<head>
-		<meta charset="utf-8">
+		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!--<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">-->
-		<link rel="stylesheet" type="text/css" href="view/css/normalize-css/normalize.css">
-		<link rel="stylesheet" type="text/css" href="view/fontawesome/css/all.css">
-		<link rel="stylesheet" href="view/css/style.css">
+		<link rel="stylesheet" type="text/css" href="view/css/normalize-css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="view/fontawesome/css/all.css" />
+		<link rel="stylesheet" href="view/css/style.css" />
 		<title>François REYNAUD - Blog de randonnée</title>
 	</head>
 

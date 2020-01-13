@@ -7,6 +7,7 @@
 	}
 	echo "</nav>";
 
+	// ctype_digit vérifie si tous les carctères de la chaine sont des chiffres
 	if(!empty($_GET["page"]) AND ctype_digit($_GET["page"]) AND $_GET["page"]<=$nbPages AND $_GET["page"]>=1) {
 		$page=$_GET["page"];
 	} else {

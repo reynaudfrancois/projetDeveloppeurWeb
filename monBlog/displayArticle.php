@@ -16,7 +16,7 @@
 			"<div class='abstractArticle'>
 				<aside class='asideAbstract'>
 					<h3>" . $donnees["lieu"] . "</h3>
-					<img src='" . $donnees["image"] . "' alt='img" . $donnees["id"] . "' class='imgAbstract'>
+					<img src='" . $donnees["image"] . "' alt='img" . $donnees["id"] . "' class='imgAbstract' />
 					<p><small><small><em>Mis en ligne : " . $donnees["date"] . "</em></small></small></p>
 				</aside>
 				<section class='sectionAbstract'>

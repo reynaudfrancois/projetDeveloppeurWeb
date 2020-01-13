@@ -36,7 +36,7 @@ function init(nbCasesEmpty) {
 
     var line = new Array();
     for (i=0 ; i<9 ; i++) {
-        alea = Math.trunc(Math.random()*figures.length);
+        alea = parseInt(Math.random()*figures.length);
         line[i]=figures[alea];
         figures.splice(alea,1);
     }
@@ -81,7 +81,7 @@ function init(nbCasesEmpty) {
 
     var deleted = new Array();
     for (i=0 ; i<nbCasesEmpty ; i++) {
-        alea = Math.trunc(Math.random()*grid.length);
+        alea = parseInt(Math.random()*grid.length);
         deleted[i] = grid[alea];
         grid.splice(grid.indexOf(deleted[i]),1);
     }

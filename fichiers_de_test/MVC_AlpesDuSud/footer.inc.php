@@ -11,7 +11,7 @@
 			</div>
 
 			<div id="copyright">
-				<small>Copyright © 2019 François Reynaud</small>
+				<small>Copyright © 2020 François Reynaud</small>
 			</div>
 
 		</footer>

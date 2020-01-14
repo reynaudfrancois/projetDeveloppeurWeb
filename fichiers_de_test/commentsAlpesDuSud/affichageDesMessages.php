@@ -1,1 +1,0 @@
-while ($donnees=$reponse->fetch())

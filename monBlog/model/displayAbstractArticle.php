@@ -8,7 +8,7 @@
 
 
 		//NE PAS OUBLIER DE METTRE DES DOUBLES GUILLEMETS QUAND ON UTILISE LE SYMBOLE $ DANS UNE REQUETE
-		$reponse=$db->query("SELECT * FROM view_abstracts ORDER BY id DESC LIMIT $firstArticleDisplayed, $nbArticlesPerPage");
+		$reponse=$db->query("SELECT * FROM posts ORDER BY id DESC LIMIT $firstArticleDisplayed, $nbArticlesPerPage");
 
 		while ($donnees=$reponse->fetch()){
 			echo 

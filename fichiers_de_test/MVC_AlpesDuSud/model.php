@@ -58,7 +58,7 @@ function countComments () {
 
 function displayComments () {
 	$db = dbConnect();
-	$reponse=$db->query("SELECT name, firstname, content, DATE_FORMAT(dated, 'le %d/%m/%Y à %H:%i') AS dateCreationFr  FROM message ORDER BY id DESC");
+	$reponse=$db->query("SELECT name, firstname, content, DATE_FORMAT(dated, ', le %d/%m/%Y à %H:%i') AS dateCreationFr  FROM message ORDER BY id DESC");
 	return $reponse;
 }
 

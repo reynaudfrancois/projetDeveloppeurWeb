@@ -7,7 +7,7 @@
 		include "model/callDatabase.php";
 
 		//NE PAS OUBLIER DE METTRE DES DOUBLES GUILLEMETS QUAND ON UTILISE LE SYMBOLE $ DANS UNE reponseUETE
-		$reponse=$bdd->prepare("SELECT * FROM vue_article WHERE id = ?");
+		$reponse=$bdd->prepare("SELECT * FROM posts WHERE id = ?");
 
 		$reponse->execute(array($_GET["numero"]));
 		$donnees=$reponse->fetch();
@@ -15,13 +15,13 @@
 		echo 
 			"<div class='abstractArticle'>
 				<aside class='asideAbstract'>
-					<h3>" . $donnees["lieu"] . "</h3>
+					<h3>" . $donnees["location"] . "</h3>
 					<img src='" . $donnees["image"] . "' alt='img" . $donnees["id"] . "' class='imgAbstract' />
-					<p><small><small><em>Mis en ligne : " . $donnees["date"] . "</em></small></small></p>
+					<p><small><small><em>Mis en ligne : " . $donnees["dated"] . "</em></small></small></p>
 				</aside>
 				<section class='sectionAbstract'>
-					<h2>" . $donnees["titre"] . "</h2>				
-					<article>" . $donnees["resume"] . "</article>
+					<h2>" . $donnees["title"] . "</h2>				
+					<article>" . $donnees["abstract"] . "</article>
 				</section>
 			</div>";
 

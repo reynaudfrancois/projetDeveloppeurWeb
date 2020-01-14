@@ -47,7 +47,6 @@
 	</div>
 
 	<?php
-
 	if ($nbTotalComments == 0) { 
 	?>
 		<p class='justifyAlign' id='nbComments'><em><strong>Aucun commentaire</strong></em></p>

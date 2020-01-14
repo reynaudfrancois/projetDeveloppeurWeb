@@ -85,6 +85,11 @@ section, aside {
 section {
 	width: 60%;
 	margin-right: 1%;
+	text-align: center;
+}
+
+section article {
+	text-align: justify;
 }
 
 aside {
@@ -94,9 +99,9 @@ aside {
 	text-align: center;
 }
 
-.readArticle {
+/*.readArticle {
 	margin: 30px auto;
-}
+}*/
 
 .greenWhite {
 	background-color: #34c924;

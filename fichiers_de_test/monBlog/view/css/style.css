@@ -44,7 +44,7 @@ hr {
 	color: #d3d3d3;
 }
 
-.readArticle {
+nav a, .readArticle {
 	text-decoration: none;
 }
 

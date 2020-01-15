@@ -46,7 +46,7 @@ $nbPages=ceil($totalArticles/$nbArticlesPerPage);
 		<main>
 
 			<!-- PAGINATION -->
-			<nav class='center'>PAGES :
+			<nav class="center">PAGES :
 			<?php
 			for ($i=1 ; $i<=$nbPages ; $i++) {
 			?>
@@ -106,7 +106,7 @@ $nbPages=ceil($totalArticles/$nbArticlesPerPage);
 
 			<h3>Page <?= $page ?></h3>
 
-			<nav class='center'>PAGES :
+			<nav class="center">PAGES :
 			<?php
 			for ($i=1 ; $i<=$nbPages ; $i++) {
 			?>

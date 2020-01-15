@@ -30,6 +30,6 @@
 				<h3>par François REYNAUD</h3>
 			</div>
 
-			<div id="blog"><a href="#" id="linkBlog">Pour suivre mon fil d'actualités sur mon blog, cliquez ici.</a></div>
+			<div id="blog"><a href="../monBlog" id="linkBlog" target="new">Pour suivre mon fil d'actualités sur mon blog, cliquez ici.</a></div>
 
 		</header>

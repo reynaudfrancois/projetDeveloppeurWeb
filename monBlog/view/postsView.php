@@ -57,7 +57,7 @@
 	<?php
 	for ($i=1 ; $i<=$nbPages ; $i++) {
 	?>
-		<a href="index.php?page=<?= $i ?>"><?= $i ?></a>
+		<a href="index.php?page=<?= $i ?>" class="underlined"><?= $i ?></a>
 	<?php
 	}
 	?>

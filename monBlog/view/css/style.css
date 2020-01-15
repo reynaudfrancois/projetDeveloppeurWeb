@@ -63,6 +63,10 @@ header {
 	padding: 10em 0;
 }
 
+.underlined {
+	text-decoration: underline;
+}
+
 /*MAIN (SAUF LA PAGINATION)*/
 
 main {

@@ -1,16 +1,8 @@
 <?php $title = "François REYNAUD - Blog de randonnée"; ?>
 
 <?php ob_start(); ?>
-		
-<header>
 
-	<div id="title">
-		<h1>MON BLOG</h1>
-		<h2>Voyages et Petites randonnées</h2>
-		<h3>François REYNAUD</h3>
-	</div>
-
-</header>
+<?php include "header.inc.php" ?>
 
 <main>
 
@@ -57,10 +49,6 @@
 	$reponse->closeCursor();
 	?>
 
-</main>
-
-<footer>
-
 	<!-- AFFICHAGE DU NUMERO DE PAGE ACTUEL -->
 	<h3>Page <?= $page ?></h3>
 
@@ -74,22 +62,10 @@
 	}
 	?>
 	</nav>
-	
-	<div id="findMe">				
-		<h3>RETROUVEZ-MOI</h3>
-		<div>
-			<a href="mailto:freynaut@laposte.net"><i class="fas fa-envelope"></i></a>
-			<a href="https://www.facebook.com/fran.cisco.376043" target="new"><i class="fab fa-facebook-square"></i></a>
-			<a href="https://www.instagram.com/n0mmade" target="new"><i class="fab fa-instagram"></i></a>
-			<a href="https://www.youtube.com/channel/UCnp9vbWd4sw0SnbX8Nw0EIQ" target="new"><i class="fab fa-youtube"></i></a>
-		</div>				
-	</div>
 
-	<div id="copyright">
-		<small>Copyright © 2019 François Reynaud</small>
-	</div>
+</main>
 
-</footer>
+<?php include "footer.inc.php>" ?>
 
 <?php $content = ob_get_clean() ?>
 

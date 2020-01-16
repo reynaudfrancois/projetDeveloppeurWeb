@@ -36,5 +36,5 @@ function postsView() {
 		return $nbPages;
 	}
 
-	require "view/postsView.php";	
+	require "view/postsSummaryView.php";	
 }

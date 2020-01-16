@@ -41,7 +41,7 @@
 			<section class="sectionAbstract">
 				<h2><?= $donnees["title"] ?></h2>				
 				<article><?= $donnees["abstract"] ?></article>
-				<button class="readArticle"> <a href="postAndCommentsView.php?numero=<?= $donnees["id"] ?>" class="readArticle"> Lire </a> </button>
+				<button class="readArticle"> <a href="displayArticle.php?numero=<?= $donnees["id"] ?>" class="readArticle"> Lire </a> </button>
 			</section>
 		</div>
 	<?php

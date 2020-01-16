@@ -38,3 +38,9 @@ function listPostsView() {
 
 	require "view/listPostsView.php";	
 }
+
+function postView() {
+	$post = selectPost($_GET['id']);
+	$comments = selectComments($_GET['id']);
+	require("view/postView.php");
+}

@@ -19,12 +19,21 @@ $reponse=$db->query("SELECT * FROM posts ORDER BY id DESC LIMIT $firstPostDispla
 return $reponse;
 }
 
+// POUR RECUPERER LE CONTENU ENTIER D'UN SEULPOST
 function selectPost ($postId) {
 	$db = dbConnect ();
 	$req=$db->prepare('SELECT * FROM posts WHERE id = ?');
 	$req->execute(array($postId));
 	$post = $req->fetch();
 	return $post;
+}
+
+// POUR RECUPERER LES COMMENTAIRES D'UN POST
+function selectComments($postId) {
+	$db = dbConnect() ;
+	$comments = $db->prepare ('SELECT id, name, firstname, content, DATE_FORMAT(dated, "%d/%m/%Y à %H:%i") AS dateComment FROM comments WHERE id_post = ? ORDER BY dateComment DESC');
+	$comments->execute(array($postId));
+	return $comments;
 }
 
 // ON APPELLE LA BDD

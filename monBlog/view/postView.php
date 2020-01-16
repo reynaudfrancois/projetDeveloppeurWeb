@@ -78,14 +78,25 @@
 
 	<div>
 		<button></button>
-		<?= "<form action='index.php?action=addComment&id=" . $post['id'] . "' method='post'>" ?>
-			<div>
-				<label for="auteur">Auteur</label><br>
-				<input type="text" id="auteur" name="auteur">
+		<?= "<form action='index.php?action=addComment&id=" . $post['id'] . "' method='post' role='form' class='commentForm'>" ?>
+			<div class="field contactInformations">
+				<label for="name">Nom *</label><br>
+				<input type="text" id="name" name="name">
 			</div>
-			<div>
-				<label for="commentaire">Commentaire</label><br>
-				<textarea id="commentaire" name="commentaire"></textarea>
+			<div class="field contactInformations">
+				<label for="firstname">Prénom *</label><br>
+				<input type="text" id="firstname" name="firstname">
+			</div>
+			<div class="field contactInformations">
+				<label for="name">Email</label><br>
+				<input type="email" id="email" name="email">
+			</div>
+			<div class="field">
+				<label for="content">Commentaire *</label><br>
+				<textarea id="content" name="content"></textarea>
+			</div>
+			<div class="required">
+				<p><strong>* Ces informations sont requises.</strong></p>
 			</div>
 			<div>
 				<input type="submit" name="send">
@@ -99,8 +110,8 @@
 		<?php
 		while ($comment=$comments->fetch()) {
 		?>
-			<p><strong><?= htmlspecialchars($comments["firstname"] . " ") . htmlspecialchars($comments["name"]) ?>,</strong> le <?= $comments["dateComment"] ?></p>
-			<p><?= nl2br(htmlspecialchars($comments["content"])) ?></p>
+			<p><strong><?= htmlspecialchars($comment["firstname"] . " ") . htmlspecialchars($comment["name"]) ?>,</strong> le <?= $comment["dateComment"] ?></p>
+			<p><?= nl2br(htmlspecialchars($comment["content"])) ?></p>
 		<?php
 		}
 		?>

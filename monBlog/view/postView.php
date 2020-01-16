@@ -8,7 +8,7 @@
 
 	<article>
 
-		<p><a href="index.php?action=listPostsView&page=2">Retour à la liste des billets</a></p>
+		<p><a href="index.php?action=listPostsView">Retour à la liste des billets</a></p>
 
 		<div><?= "<img src='" . $post["image"] . "' alt='image_" . $post["id"] . "' />" ?></div>
 

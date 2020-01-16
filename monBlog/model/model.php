@@ -19,6 +19,14 @@ $reponse=$db->query("SELECT * FROM posts ORDER BY id DESC LIMIT $firstPostDispla
 return $reponse;
 }
 
+function selectPost ($postId) {
+	$db = dbConnect ();
+	$req=$db->prepare('SELECT * FROM posts WHERE id = ?');
+	$req->execute(array($postId));
+	$post = $req->fetch();
+	return $post;
+}
+
 // ON APPELLE LA BDD
 function dbConnect() {
 	try {

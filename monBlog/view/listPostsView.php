@@ -34,14 +34,14 @@
 	?>
 		<div class="abstractArticle">
 			<aside class="asideAbstract">
-				<h3><?= $donnees["location"] ?></h3>
+				<h3><?= $donnees["location"] . "<br /><em>" . $donnees["period"] . " </em>"?></h3>
 				<img src="<?= $donnees['image'] ?>" alt="img<?= $donnees['id'] ?>" class="imgAbstract" />
 				<p><small><small><em>Mis en ligne : <?= $donnees["dated"] ?></em></small></small></p>
 			</aside>
 			<section class="sectionAbstract">
 				<h2><?= $donnees["title"] ?></h2>				
 				<article><?= $donnees["abstract"] ?></article>
-				<button class="readArticle"> <a href="postView.php?action=<?= $donnees["id"] ?>" class="readArticle"> Lire </a> </button>
+				<button class="readArticle"><a <?= "href='index.php?action=postView&id=" . $donnees["id"] . "' class='readArticle'" ?>>Lire</a></button>
 			</section>
 		</div>
 	<?php

@@ -1,7 +1,7 @@
 <?php
 require "model/model.php";
 
-function postsView() {
+function listPostsView() {
 	// PAGE ACTUELLEMENT AFFICHEE
 	function actualPage() {
 		$nbPostsPerPage = nbPostsPerPage();
@@ -36,5 +36,5 @@ function postsView() {
 		return $nbPages;
 	}
 
-	require "view/postsSummaryView.php";	
+	require "view/listPostsView.php";	
 }

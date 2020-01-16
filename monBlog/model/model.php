@@ -36,6 +36,8 @@ function selectComments ($postId) {
 	return $comments;
 }
 
+
+// POUR AJOUTER UN NOUVEAU COMMENTAIRE
 function postComment ($postId, $name, $firstname, $email, $content) {
 	$db=dbConnect();
 	$commentAdded = $db->prepare("INSERT INTO comments(id_post, name, firstname, email, content, dated) VALUES (?, ?, ?, ?, ?, NOW())");

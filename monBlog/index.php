@@ -10,7 +10,7 @@ try {
 			} else {
 				throw new Exception ('Aucun identifiant de billet envoyé');
 			}
-		} /*else ($_GET['action'] == 'addComment') {
+		} else if ($_GET['action'] == 'addComment') {
 			if (isset($_GET['id']) && $_GET['id'] > 0) {
 				if (!empty($_POST['auteur']) && !empty($_POST['commentaire'])) {
 					addComment($_GET['id'], $_POST['auteur'], $_POST['commentaire']);
@@ -20,7 +20,7 @@ try {
 			} else {
 				throw new Exception ('Aucun identifiant de billet envoyé !');
 			}
-		}*/
+		}
 	} else {
 	 	listPostsView ();
 	}

@@ -76,6 +76,23 @@
 
 	</article>
 
+	<div>
+		<button></button>
+		<?= "<form action='index.php?action=addComment&id=" . $post['id'] . "' method='post'>" ?>
+			<div>
+				<label for="auteur">Auteur</label><br>
+				<input type="text" id="auteur" name="auteur">
+			</div>
+			<div>
+				<label for="commentaire">Commentaire</label><br>
+				<textarea id="commentaire" name="commentaire"></textarea>
+			</div>
+			<div>
+				<input type="submit" name="send">
+			</div>
+		<?= "</form>" ?>
+	</div>
+
 	<div class="comments">
 		<h4><em>Commentaires</em></h4>
 

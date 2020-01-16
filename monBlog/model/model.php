@@ -29,11 +29,18 @@ function selectPost ($postId) {
 }
 
 // POUR RECUPERER LES COMMENTAIRES D'UN POST
-function selectComments($postId) {
+function selectComments ($postId) {
 	$db = dbConnect() ;
 	$comments = $db->prepare ('SELECT id, name, firstname, content, DATE_FORMAT(dated, "%d/%m/%Y à %H:%i") AS dateComment FROM comments WHERE id_post = ? ORDER BY dateComment DESC');
 	$comments->execute(array($postId));
 	return $comments;
+}
+
+function postComment ($postId, $name, $firstname, $email, $content) {
+	$db=dbConnect();
+	$commentAdded = $db->prepare("INSERT INTO comments(id_post, name, firstname, email, content, dated) VALUES (?, ?, ?, ?, ?, NOW())");
+	$newComment = $commentAdded->execute(array($postId, $name, $firstname, $email, $content));
+	return $newComment;
 }
 
 // ON APPELLE LA BDD

@@ -44,3 +44,13 @@ function postView() {
 	$comments = selectComments($_GET['id']);
 	require("view/postView.php");
 }
+
+function addComment($postId, $name, $firstname, $email, $content) {
+	$newComment = postComment($postId, $name, $firstname, $email, $content);
+
+	if ($newComment == false) {
+		throw new Exception('Impossible d\'ajouter le commentaire !');
+	} else {
+		header('Location: index.php?action=post&id=' . $postId);
+	}
+}

@@ -103,21 +103,6 @@ aside {
 	text-align: center;
 }
 
-/*.readArticle {
-	margin: 30px auto;
-}*/
-
-.greenWhite {
-	background-color: #34c924;
-	color: #fff;
-	margin-top: 10px;
-}
-
-.blueWhite {
-	background-color: #77b5fe;
-	color: #fff;
-}
-
 .imgAbstract {
 	max-width: 375px;
 	max-height: 600px;
@@ -127,33 +112,6 @@ aside {
 
 .imgAbstract, #contact {
 	text-align: center;
-}
-
-	/* MAIN #story */
-
-.blue {
-	color: #0000ff;
-}
-
-.turquoise {
-	background-color: #40e0d0;
-}
-
-	/* MAIN #photos */
-
-#image {
-	max-width: 800px;
-	max-height: 600px;
-	width: auto;
-	height: auto;
-}
-
-.button {
-	display: inline-block;
-}
-
-#changeMode, #stop, #pause, #play {
-	display: none;
 }
 
 	/* MAIN #contact */
@@ -215,4 +173,54 @@ footer {
 #findMe {
 	background-color: #98fb98;
 	margin-top: 40px;
+}
+
+	/* MAIN #comments */
+
+.commentForm {
+	background-color: #41d1cc;
+	padding: 1px 0 30px;
+}
+
+.field {
+	margin: 30px auto;
+}
+
+.contactInformations {
+	width: 50%;
+}
+
+.contactInformations input {
+	width: 100%;
+	height: 40px;
+	margin: 0;
+}
+
+.field textarea {
+	width: 96%;
+	height: 10rem;
+}
+
+.required {
+	margin-bottom: 20px;
+	color: #fff;
+}
+
+.button {
+	background-color: #000;
+	color: #fff;
+	border: 2px solid #fff;
+	padding: 5px 10px;
+}
+
+.button:hover {
+	cursor: pointer;
+}
+
+#nbComments {
+	color: #0000ff;
+}
+
+.justifyAlign {
+	text-align: justify;
 }

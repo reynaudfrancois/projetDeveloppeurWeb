@@ -152,22 +152,7 @@ aside {
 	display: none;
 }
 
-/*FOOTER*/
-
-footer {
-	text-align: center;
-}
-
-#findMe, #copyright {
-	padding: 1px 0 20px;
-}
-
-#findMe {
-	background-color: #98fb98;
-	margin-top: 40px;
-}
-
-	/* FOOTER #comment */
+	/* MAIN #comments */
 
 #commentForm {
 	background-color: #41d1cc;
@@ -217,3 +202,17 @@ footer {
 	text-align: justify;
 }
 
+/*FOOTER*/
+
+footer {
+	text-align: center;
+}
+
+#findMe, #copyright {
+	padding: 1px 0 20px;
+}
+
+#findMe {
+	background-color: #98fb98;
+	margin-top: 40px;
+}

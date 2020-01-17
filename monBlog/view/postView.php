@@ -99,7 +99,7 @@
 				<p><strong>* Ces informations sont requises.</strong></p>
 			</div>
 			<div>
-				<input type="submit" name="send">
+				<input type="submit" name="send" value="Envoyer" class="button">
 			</div>
 		<?= "</form>" ?>
 	</div>

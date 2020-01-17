@@ -10,7 +10,6 @@ function nbPosts() {
 }
 
 // ON RECUPERE L'ENSEMBLE DES POSTS ET DE LEUR CONTENU
-
 function selectAllPosts () {
 $db = dbConnect();
 $nbPostsPerPage = nbPostsPerPage();

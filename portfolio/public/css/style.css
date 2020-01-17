@@ -1,19 +1,20 @@
 /* GENERAL */
 
 * {
-	-webkit-box-sizing: border-box;
+	/*-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	outline: none;
+	outline: none;*/
 }
 
 html {
-	margin: auto;
+	/*margin: auto;
 	overflow-y: scroll;
+	overflow-x: scroll;*/
  	scroll-behavior: smooth;
 }
 	
 body {
-	width: 100%;
+	/*width: 100%;*/
 	margin: auto;
 	text-align: center;	
 	font-size: 1vw;
@@ -21,6 +22,15 @@ body {
 
 a {
 	text-decoration: none;
+}
+
+#skills h2, #training div, #experience div, #returnTop {
+	background-color: rgb(249, 249, 34);
+	border: 2px solid #0000ff;
+}
+
+#skills, #portfolio div, footer p {
+	background-color: rgb(146, 232, 146);
 }
 
 /* HEADER */
@@ -43,16 +53,16 @@ nav a {
 	color: blue;
 	background-color: rgb(175, 178, 173);
 	font-size: 1.2vw;
-	margin: 0;
+	/*margin: 0;*/
 	padding: 10px;
 }
 
-#moi {
+#me {
 	padding-top: 50px;
 }
 
 #photo {
-	width: 220px;
+	/*width: 220px;*/
 	height: 300px;
 	margin-top: 50px;
 	border-radius: 100%;
@@ -67,12 +77,8 @@ nav a {
 	margin-top: 60px;
 	text-transform: uppercase;
 	background-color: white;
-	color: #000;
+	/*color: #000;*/
 	padding-top: 2px;
-}
-
-#telechargement a {
-	
 }
 
 /* MAIN */
@@ -80,7 +86,7 @@ nav a {
 main h1 {
 	text-transform: uppercase;
 	margin-top: 0;
-	padding: 60px 0 50px 0;
+	padding: 60px 0 50px;
 	color: #0000ff;
 	background-color: #d3d3d3;
 }
@@ -97,29 +103,23 @@ main h2 {
 	color: #ff0000;
 }
 
-#competences h2 {
+#skills h2 {
 	text-transform: uppercase;
 	width: 40%;
 	display: inline-block;
-	border: 2px solid #0000ff;
-	margin: 10px;
-	background-color: rgb(249, 249, 34);
-	color: #ff0000;
+	/*margin: 10px;*/
 }
 
-#competences {
-	background-color: rgb(146, 232, 146);
+#skills {
 	padding-bottom: 20px;
 }
 
-#formation, #experience {
+#training, #experience {
 	background-color: #4cc1ef;
 	padding-bottom: 5px;
 }
 
-#formation div, #experience div {
-	border: 2px solid #0000ff;
-	background-color: rgb(249, 249, 34);
+#training div, #experience div {
 	margin: 30px auto;
 	width: 81.5%;
 }
@@ -133,16 +133,15 @@ main h2 {
 #portfolio div {
 	display: flex;
 	justify-content: space-around;
-	background-color: rgb(146, 232, 146);
 	padding: 20px 0;
 }
 
 #portfolio img {
-	width: 400px;
-	height: 300px;
+	width: 30vw;
+	height: 22.5vw;
 }
 
-/* MAIN #contact */
+	/* MAIN #contact */
 
 #contact {
 	background-color: #d3d3d3;
@@ -166,19 +165,13 @@ footer {
 }
 
 footer p {
-	background-color: rgb(146, 232, 146);
 	padding: 10px;
 	margin: 0;
 }
 
 #returnTop {
-	background-color: rgb(249, 249, 34);
-	border: 2px solid #0000ff;
-	padding: 2px;
-}
-
-footer a {
 	color: #ff0000;
+	padding: 2px;
 }
 
 footer small {

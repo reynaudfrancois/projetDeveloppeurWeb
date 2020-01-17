@@ -1,0 +1,25 @@
+/*GENERAL*/
+
+* {
+	-webkit-box-sizing:border-box;
+	box-sizing: border-box;
+	outline: none;
+}
+
+html {
+	margin: auto;
+}
+
+
+/*HEADER*/
+
+header {
+	background-image: url("./img/montbouquet.jpg");
+	background-repeat: no-repeat;
+	background-size:contain;
+	background-position: center;
+	padding : 10em;
+	text-align: center;
+	color: white;
+	text-shadow: 1px 1px 2px black;
+}

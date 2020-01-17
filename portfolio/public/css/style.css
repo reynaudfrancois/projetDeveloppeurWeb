@@ -7,14 +7,14 @@
 }
 
 html {
-	/*margin: auto;
-	overflow-y: scroll;
+	margin: auto;
+	/*overflow-y: scroll;
 	overflow-x: scroll;*/
  	scroll-behavior: smooth;
 }
 	
 body {
-	/*width: 100%;*/
+	width: 100%;
 	margin: auto;
 	text-align: center;	
 	font-size: 1vw;
@@ -91,16 +91,20 @@ main h1 {
 	background-color: #d3d3d3;
 }
 
-main h3, main h2, main p {
+main h2, main h3, main p {
 	margin: 10px;
+}
+
+main h2 {
+	color: #ff0000;
 }
 
 main em {
 	color: rgb(113, 122, 119);
 }
 
-main h2 {
-	color: #ff0000;
+#skills {
+	padding-bottom: 20px;
 }
 
 #skills h2 {
@@ -108,10 +112,6 @@ main h2 {
 	width: 40%;
 	display: inline-block;
 	/*margin: 10px;*/
-}
-
-#skills {
-	padding-bottom: 20px;
 }
 
 #training, #experience {

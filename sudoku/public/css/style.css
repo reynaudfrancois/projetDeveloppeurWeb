@@ -1,0 +1,121 @@
+/* GENERAL */
+
+* {
+	/*-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: none;*/
+}
+
+html {
+	margin: auto;
+	width: 90%;
+}
+
+body {
+	/*font-size: 1rem;*/
+}
+
+h1, h2, h3, td, #levelChoice {
+	text-align: center;
+}
+
+/* HEADER */
+
+#gameRules, #explanation, #levelChoice, #checkBox {
+	border: 2px solid #000;
+	margin: 0 200px 30px;
+}
+
+#gameRules, #explanation {
+	padding: 10px;
+	text-align: justify;
+}
+
+	/* HEADER #explanation */
+
+.lightBlue {
+	color: #add8e6;
+}
+
+.empty {
+	color: #ffa500;
+}
+
+.right {
+	color: #00ff00;
+}
+
+.false {
+	color: #ff0000;
+}
+
+	/* HEADER #levelChoice */
+
+#checkBox {
+	text-align: left;
+	margin: 0 20% 10px;
+	padding: 10px;
+	background-color: #87ceeb;
+}
+
+#validate {
+	margin-bottom: 10px;
+}
+
+/* MAIN */
+
+	/* MAIN - Grille du Sudoku */
+
+table, td {
+	border: 1px solid #c0c0c0;
+	border-collapse: collapse;
+}
+
+table {
+	margin: auto;
+}
+
+td {
+	color: #808080;
+	width: 3rem;
+	height: 3rem;
+}
+
+td:nth-child(3), td:nth-child(6) {
+	border-right: 1px solid #0000ff;
+}
+
+tr:nth-child(3) td, tr:nth-child(6) td {
+	border-bottom: 1px solid #0000ff;
+}
+
+	/* MAIN - Boutons de Jeu */
+
+#allButtons {
+	text-align: center;
+	margin-top: 10px;
+}
+
+.buttons {
+	margin: 10px;
+}
+
+	/* MAIN - COULEUR QUI MONTRE QUE LA CASE EST SELECTIONNEE */
+
+#skyBlue {
+	background-color: #f0f8ff;
+}
+
+	/* MAIN - MESSAGES DE VALIDATION OU NON DE LA GRILLE COMPLETEE */
+
+#gridOk {
+	display: none;
+	text-align: center;
+	color: #008000;
+}
+
+#gridError {
+	display: none;
+	text-align: center;
+	color: #ff0000;
+}

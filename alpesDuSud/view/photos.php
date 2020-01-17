@@ -7,7 +7,7 @@
 	<div class="imgCenter">
 
 		<div>
-			<img name="slide" src="alpiluberon/0.JPG" id="imageSlider" />
+			<img name="slide" src="../public/images/alpiluberon/0.JPG" id="imageSlider" />
 			<h4 id="counter"></h4>				
 		</div>
 
@@ -19,7 +19,7 @@
 		<button id="pause">Pause</button>
 		<button id="play">Lecture</button>
 
-		<script type="text/javascript" src="view/javascript/slider.js"></script>				
+		<script type="text/javascript" src="../public/javascript/slider.js"></script>				
 	</div>
 
 </main>

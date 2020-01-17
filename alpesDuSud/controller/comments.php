@@ -1,7 +1,7 @@
 <?php
 
-require ("model.php");
+require ("../model/model.php");
 $error = postComment();
 $nbTotalComments = countComments();
 $reponse = displayComments();
-require ("commentsView.php");
+require ("../view/commentsView.php");

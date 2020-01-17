@@ -99,25 +99,25 @@
 
 			<div class="imgCenter">
 				<h3>ARRIERE-PAYS NICOIS<br />Le Mont Agel</h3>
-				<img src="view/images/imgMountains/1.JPG" class="massifs" />
+				<img src="../public/images/imgMountains/1.JPG" class="massifs" />
 			</div>
 			<hr>
 
 			<div class="imgCenter">
 				<h3>MERCANTOUR<br />Le Mont Mounier</h3>
-				<img src="view/images/imgMountains/2.JPG" class="massifs" />
+				<img src="../public/images/imgMountains/2.JPG" class="massifs" />
 			</div>
 			<hr>
 
 			<div class="imgCenter">
 				<h3>QUEYRAS<br />La Combe du Queyras</h3>
-				<img src="view/images/imgMountains/3.JPG" class="massifs" />
+				<img src="../public/images/imgMountains/3.JPG" class="massifs" />
 			</div>
 			<hr>
 
 			<div class="imgCenter">
 				<h3>ECRINS<br />Le Mont Pelvoux</h3>
-				<img src="view/images/imgMountains/4.JPG" class="massifs" />
+				<img src="../public/images/imgMountains/4.JPG" class="massifs" />
 			</div>			
 
 		</div>

@@ -22,7 +22,7 @@
 
 			<div class="imgCenter">
 				<h3><small>Peillon</small></h3>
-				<img src="view/images/imgStory/stage1.JPG" />
+				<img src="../public/images/imgStory/stage1.JPG" />
 			</div>
 
 			<hr />
@@ -37,7 +37,7 @@
 
 			<div class="imgCenter">
 				<h3><small>Bivouac</small></h3>
-				<img src="view/images/imgStory/stage1.JPG" />
+				<img src="../public/images/imgStory/stage1.JPG" />
 			</div>
 			
 			<hr />
@@ -52,7 +52,7 @@
 
 			<div class="imgCenter">
 				<h3><small>Bivouac</small></h3>
-				<img src="view/images/imgStory/stage1.JPG" />
+				<img src="../public/images/imgStory/stage1.JPG" />
 			</div>
 			
 			<hr />
@@ -67,7 +67,7 @@
 
 			<div class="imgCenter">
 				<h3><small>Bivouac</small></h3>
-				<img src="view/images/imgStory/stage1.JPG" />
+				<img src="../public/images/imgStory/stage1.JPG" />
 			</div>
 			
 			<hr />
@@ -82,7 +82,7 @@
 
 			<div class="imgCenter">
 				<h3><small>Bivouac</small></h3>
-				<img src="view/images/imgStory/stage1.JPG" />
+				<img src="../public/images/imgStory/stage1.JPG" />
 			</div>
 			
 			<hr />
@@ -97,7 +97,7 @@
 
 			<div class="imgCenter">
 				<h3><small>Bivouac</small></h3>
-				<img src="view/images/imgStory/stage1.JPG" />
+				<img src="../public/images/imgStory/stage1.JPG" />
 			</div>
 			
 			<hr />
@@ -112,7 +112,7 @@
 
 			<div class="imgCenter">
 				<h3><small>Bivouac</small></h3>
-				<img src="view/images/imgStory/stage1.JPG" />
+				<img src="../public/images/imgStory/stage1.JPG" />
 			</div>
 			
 			<hr />
@@ -127,7 +127,7 @@
 
 			<div class="imgCenter">
 				<h3><small>Bivouac</small></h3>
-				<img src="view/images/imgStory/stage1.JPG" />
+				<img src="../public/images/imgStory/stage1.JPG" />
 			</div>
 			
 			<hr />
@@ -142,7 +142,7 @@
 
 			<div class="imgCenter">
 				<h3><small>Bivouac</small></h3>
-				<img src="view/images/imgStory/stage1.JPG" />
+				<img src="../public/images/imgStory/stage1.JPG" />
 			</div>
 			
 			<hr />
@@ -157,7 +157,7 @@
 
 			<div class="imgCenter">
 				<h3><small>Bivouac</small></h3>
-				<img src="view/images/imgStory/stage1.JPG" />
+				<img src="../public/images/imgStory/stage1.JPG" />
 			</div>
 			
 			<hr />
@@ -172,7 +172,7 @@
 
 			<div class="imgCenter">
 				<h3><small>Bivouac</small></h3>
-				<img src="view/images/imgStory/stage1.JPG" />
+				<img src="../public/images/imgStory/stage1.JPG" />
 			</div>
 			
 			<hr />
@@ -187,7 +187,7 @@
 
 			<div class="imgCenter">
 				<h3><small>Bivouac</small></h3>
-				<img src="view/images/imgStory/stage1.JPG" />
+				<img src="../public/images/imgStory/stage1.JPG" />
 			</div>
 			
 			<hr />
@@ -202,7 +202,7 @@
 
 			<div class="imgCenter">
 				<h3><small>Bivouac</small></h3>
-				<img src="view/images/imgStory/stage1.JPG" />
+				<img src="../public/images/imgStory/stage1.JPG" />
 			</div>
 			
 			<hr />
@@ -217,7 +217,7 @@
 
 			<div class="imgCenter">
 				<h3><small>Bivouac</small></h3>
-				<img src="view/images/imgStory/stage1.JPG" />
+				<img src="../public/images/imgStory/stage1.JPG" />
 			</div>
 			
 			<hr />
@@ -232,7 +232,7 @@
 
 			<div class="imgCenter">
 				<h3><small>Bivouac</small></h3>
-				<img src="view/images/imgStory/stage1.JPG" />
+				<img src="../public/images/imgStory/stage1.JPG" />
 			</div>
 			
 			<hr />
@@ -247,7 +247,7 @@
 
 			<div class="imgCenter">
 				<h3><small>Bivouac</small></h3>
-				<img src="view/images/imgStory/stage1.JPG" />
+				<img src="../public/images/imgStory/stage1.JPG" />
 			</div>
 			
 			<hr />
@@ -262,7 +262,7 @@
 
 			<div class="imgCenter">
 				<h3><small>Bivouac</small></h3>
-				<img src="view/images/imgStory/stage1.JPG" />
+				<img src="../public/images/imgStory/stage1.JPG" />
 			</div>
 			
 			<hr />
@@ -277,7 +277,7 @@
 
 			<div class="imgCenter">
 				<h3><small>Bivouac</small></h3>
-				<img src="view/images/imgStory/stage1.JPG" />
+				<img src="../public/images/imgStory/stage1.JPG" />
 			</div>
 			
 			<hr />
@@ -292,7 +292,7 @@
 
 			<div class="imgCenter">
 				<h3><small>Bivouac</small></h3>
-				<img src="view/images/imgStory/stage1.JPG" />
+				<img src="../public/images/imgStory/stage1.JPG" />
 			</div>
 
 		</div>

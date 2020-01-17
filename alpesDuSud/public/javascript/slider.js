@@ -12,7 +12,7 @@ var n=14; //nombre d'images du slider
 //tableau et boucle de chargement des images
 var images = new Array(n);
 for (var i=0 ; i<images.length ; i++) {
-    var j = "alpiluberon/" + (i).toString() + ".JPG";
+    var j = "../public/images/alpiluberon/" + (i).toString() + ".JPG";
     images [i] = j;
 }
 

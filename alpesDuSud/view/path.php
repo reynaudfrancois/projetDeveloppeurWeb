@@ -31,9 +31,9 @@
 
 		<div class="imgCenter">
 			<h3>La Via Alpina</h3>
-			<img src="view/images/imgPath/viaAlpina.jpg" />
+			<img src="../public/images/imgPath/viaAlpina.jpg" />
 			<br />
-			<a href="http://www.via-alpina.org/">Site web : www.via-alpina.org</a>
+			<a href="http://www.via-alpina.org/" target="new">Site web : www.via-alpina.org</a>
 		</div>
 
 		<p>La Via Alpina comprend 5 parcours de couleurs différentes, totalisant plus de 5000 km de trajet et 342 étapes.</p>

@@ -1,4 +1,4 @@
-<?php include "header.inc.php"; ?> 
+<?php include "view/header.inc.php"; ?> 
 
 <main class="general" id="index">
 
@@ -11,7 +11,7 @@
 			<p>En juin 2015, j'ai décidé d'effectuer à pied la traversée des Alpes du Sud, entre Monaco et Valloire, au Sud de la Savoie. Il s'agissait là de ma première grande randonnée. Elle s'est effectuée en 3 semaines sur 19 étapes, de 15 à 25 km pour la plupart.</p>
 
 			<div class="imgCenter">
-				<img src="view/images/accueil.JPG" />
+				<img src="public/images/accueil.JPG" />
 			</div>
 
 		</article>
@@ -79,7 +79,7 @@
 		<p>Les Alpes du Sud sont une zone géographique naturelle des Alpes Françaises, située principalement dans la région Provence-Alpes-Côte-d'Azur, le reste se trouvant dans le département de la Drôme.</p>
 
 		<div class="imgCenter">
-			<img src="view/images/alpesDuSud.JPG" />
+			<img src="public/images/alpesDuSud.JPG" />
 		</div>
 
 		<p>La ligne de crêtes séparant les Alpes du Sud de celles du Nord suit la limite Sud du Vercors, le Col de la Croix-Haute, les crêtes au Sud du Dévoluy, le Col Bayard, la limite sud des Ecrins, les Cols du Lautaret et du Galibier, et le fond de la vallée de la Clarée.</p>
@@ -103,4 +103,4 @@
 
 </main>	
 
-<?php include "footer.inc.php"; ?>
+<?php include "view/footer.inc.php"; ?>

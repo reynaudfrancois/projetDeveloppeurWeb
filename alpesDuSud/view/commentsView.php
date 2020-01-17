@@ -42,7 +42,7 @@
 
 		</form>
 
-		<script type="text/javascript" src="view/javascript/comments.js"></script>
+		<script type="text/javascript" src="../public/javascript/comments.js"></script>
 					
 	</div>
 
@@ -72,7 +72,7 @@
 	} 
 	?>
 
-	<img src='view/images/imageDeFond.JPG' alt='imgComments' />
+	<img src='../public/images/imageDeFond.JPG' alt='imgComments' />
 
 </main>	
 

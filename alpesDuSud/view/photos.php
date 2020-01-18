@@ -1,13 +1,13 @@
-<?php include "header.inc.php" ?>
+<?php include "header.inc.php"; ?>
 
-<main class="general" id="photos">
+<main id="photos">
 
 	<h2 class="generalTitle">LES PHOTOS</h2>
 
 	<div class="imgCenter">
 
 		<div>
-			<img name="slide" src="../public/images/alpiluberon/0.JPG" id="imageSlider" />
+			<img name="slide" src="../public/images/alpiluberon/0.JPG" id="imageSlider" alt="Alpilles - Lubéron" />
 			<h4 id="counter"></h4>				
 		</div>
 
@@ -19,12 +19,13 @@
 		<button id="pause">Pause</button>
 		<button id="play">Lecture</button>
 
-		<script type="text/javascript" src="../public/javascript/slider.js"></script>				
+		<script type="text/javascript" src="../public/javascript/slider.js"></script>		
+
 	</div>
 
 </main>
 
-<?php include "footer.inc.php" ?>
+<?php include "footer.inc.php"; ?>
 			
 
 	

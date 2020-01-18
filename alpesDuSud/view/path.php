@@ -1,6 +1,6 @@
 <?php include "header.inc.php"; ?> 
 
-<main class="general" id="path">
+<main id="path">
 
 	<section>
 
@@ -9,7 +9,6 @@
 		<p>Pour traverser les Alpes du Sud, je suis parti de Monaco, pour terminer à Valloire, au Sud de la Savoie. Je suis passé par l'Arrière-Pays Niçois, le Mercantour, le Chambeyron, le Queyras, les Ecrins et les Cerces. Les principales vallées traversées ont été la Vésubie, la Tinée, l'Ubaye, le Guil, la Durance et la Guisane.</p>
 
 		<p>Après avoir quitté Monaco, j'ai pris de la hauteur sur la corniche de la Riviera vers le bourg de la Turbie. De là, j'ai parcouru pendant 5 étapes l'Arrière-Pays Niçois en passant notamment par Sospel et le Col de Turini, pour rejoindre la vallée de la Vésubie, que j'ai suivie jusqu'à  Saint-Martin-Vésubie.</p>
-
 		
 		<p>J'ai alors entamé le Mercantour. J'ai rejoint le Col Saint-Martin, où je suis passé dans la vallée de la Tinée, que j'ai suivie durant 6 étapes. Après avoir gagné le bas de la vallée, j'ai gravi le Mont Mounier presque jusqu'à son sommet, depuis Saint-Sauveur-sur-Tinée, en passant par le Refuge de Longon et le Col des Moulines. Je suis ensuite redescendu sur Saint-Etienne-de-Tinée en passant par la station d'Auron. De là, j'ai remonté le fond de vallée jusqu'au Pas de la Cavale, où je suis passé dans la vallée de l'Ubaye. Un peu plus bas, j'ai rejoint le village de Larche, où ma traversée du Mercantour s'est achevée.</p>
 
@@ -31,7 +30,7 @@
 
 		<div class="imgCenter">
 			<h3>La Via Alpina</h3>
-			<img src="../public/images/imgPath/viaAlpina.jpg" />
+			<img src="../public/images/imgPath/viaAlpina.jpg" alt="La Via Alpina" />
 			<br />
 			<a href="http://www.via-alpina.org/" target="new">Site web : www.via-alpina.org</a>
 		</div>

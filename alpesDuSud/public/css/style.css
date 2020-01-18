@@ -12,7 +12,8 @@ html {
 }
 
 body {
-	/*font-size: 100%;*/
+	/*width: 100%;
+	margin: auto;*/
 }
 
 h1 {
@@ -27,12 +28,7 @@ h3 {
 	font-size: 1.5rem;
 }
 
-h1, h2, h3 {
-	text-align: center;
-}
-
 a {
-	color: #0000ff;
 	font-size: 1.7rem;
 	margin: 1.5%;
 }
@@ -41,14 +37,24 @@ hr {
 	color: #d3d3d3;
 }
 
+h1, h2, h3, header, footer, .imgCenter, #comments {
+	text-align: center;
+}
+
+header, #linkBlog, .generalTitle, .subTitle, #required, .button  {
+	color: #fff;
+}
+
+a, .storyParagraphTitle, #nbComments {
+	color: #0000ff;
+}
+
 /*HEADER*/
 
 header {
 	background-image: url("../images/imageDeFond.JPG");
 	background-size: cover;
 	background-position: 0 10%;
-	text-align: center;
-	color: #fff;
 	text-shadow: 2px 2px 2px #000;
 }
 
@@ -73,17 +79,13 @@ nav a {
 	background-color: #90ee90;
 }
 
-#linkBlog {
-	color: #fff;
-}
-
 /*MAIN*/
 
 main {
 	margin-top: 20px;
 }
 
-section, aside, .mainDiv {
+section, aside, #story {
 	border: 1px solid #808080;
 	padding: 1% 50px;
 	text-align: justify;
@@ -107,33 +109,23 @@ aside {
 	padding: 0 20px 5px;
 }
 
-.generalTitle {
-	background-color: #34c924;
-	color: #fff;
-	margin-top: 10px;
-}
-
-.subTitle {
-	background-color: #77b5fe;
-	color: #fff;
-}
-
-.general img {
+main img {
 	max-width: 400px;
 	max-height: 300px;
 	width: 90%;
 	height: auto;
 }
 
-.imgCenter, #comments {
-	text-align: center;
+.generalTitle {
+	background-color: #34c924;
+	margin-top: 10px;
+}
+
+.subTitle {
+	background-color: #77b5fe;
 }
 
 	/* MAIN #story */
-
-.storyParagraphTitle {
-	color: #0000ff;
-}
 
 .storyDateStage {
 	background-color: #40e0d0;
@@ -153,6 +145,16 @@ aside {
 }
 
 	/* MAIN #comments */
+
+.button {
+	background-color: #000;
+	border: 2px solid #fff;
+	padding: 5px 10px;
+}
+
+.button:hover {
+	cursor: pointer;
+}
 
 #commentForm {
 	background-color: #41d1cc;
@@ -180,22 +182,6 @@ aside {
 
 #required {
 	margin-bottom: 20px;
-	color: #fff;
-}
-
-.button {
-	background-color: #000;
-	color: #fff;
-	border: 2px solid #fff;
-	padding: 5px 10px;
-}
-
-.button:hover {
-	cursor: pointer;
-}
-
-#nbComments {
-	color: #0000ff;
 }
 
 .justifyAlign {
@@ -203,10 +189,6 @@ aside {
 }
 
 /*FOOTER*/
-
-footer {
-	text-align: center;
-}
 
 #findMe, #copyright {
 	padding: 1px 0 20px;

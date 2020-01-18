@@ -1,6 +1,6 @@
 <?php require "header.inc.php"; ?>
 
-<main class="general" id="comments">
+<main id="comments">
 
 	<div>		
 			
@@ -31,7 +31,7 @@
 
 			<div class="field">
 				<label for="content">Votre commentaire *</label>
-				<textarea name="content" rows="20px" cols="100px" id="content"></textarea>
+				<textarea name="content" rows="20px" cols="100px" id="content" value=""></textarea>
 			</div>
 
 			<div id="required">				
@@ -49,34 +49,31 @@
 	<?php
 	if ($nbTotalComments == 0) { 
 	?>
-		<p class='justifyAlign' id='nbComments'><em><strong>Aucun commentaire</strong></em></p>
+		<p class="justifyAlign" id="nbComments"><em><strong>Aucun commentaire</strong></em></p>
 	<?php 
 	} else {
 		if ($nbTotalComments == 1) {
 	?>
-			<p class='justifyAlign' id='nbComments'><em><strong><?=  $nbTotalComments ?> commentaire</strong></em></p>
+			<p class="justifyAlign" id="nbComments"><em><strong><?=  $nbTotalComments ?> commentaire</strong></em></p>
 	<?php
 		} else { 
 	?>
-			<p class='justifyAlign' id='nbComments'><em><strong><?=  $nbTotalComments ?> commentaires</strong></em></p>
+			<p class="justifyAlign" id="nbComments"><em><strong><?=  $nbTotalComments ?> commentaires</strong></em></p>
 	<?php 
 		}
 		while ($donnees=$reponse->fetch()) {
 	?>
 			<hr />
-			<p class='justifyAlign'><strong><?= htmlspecialchars($donnees["firstname"]) . " " . htmlspecialchars($donnees["name"]) ?></strong><?= htmlspecialchars($donnees["dateCreationFr"]) ?></p>
-			<p class='justifyAlign'><?= htmlspecialchars($donnees["content"]) ?></p>
+			<p class="justifyAlign"><strong><?= htmlspecialchars($donnees["firstname"]) . " " . htmlspecialchars($donnees["name"]) ?></strong><?= htmlspecialchars($donnees["dateCreationFr"]) ?></p>
+			<p class="justifyAlign"><?= htmlspecialchars($donnees["content"]) ?></p>
 	<?php 
 		}
 		$reponse->closeCursor();
 	} 
 	?>
 
-	<img src='../public/images/imageDeFond.JPG' alt='imgComments' />
+	<img src="../public/images/imageDeFond.JPG" alt="Névé" />
 
 </main>	
 
 <?php require "footer.inc.php"; ?>
-			
-			
-

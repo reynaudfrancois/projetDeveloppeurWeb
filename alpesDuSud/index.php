@@ -8,7 +8,6 @@
 			<h2 class="generalTitle">ACCUEIL</h2>
 			<p>En juin 2015, j'ai décidé d'effectuer à pied la traversée des Alpes du Sud, entre Monaco et Valloire, au Sud de la Savoie. Il s'agissait là de ma première grande randonnée. Elle s'est effectuée en 3 semaines sur 19 étapes, de 15 à 25 km pour la plupart.</p>
 			<div class="imgCenter">
-				<h3><small>Face au Pelvoux</small></h3>
 				<img src="public/images/accueil.JPG" alt="Face au Pelvoux" />
 			</div>
 		</article>
@@ -56,7 +55,6 @@
 		<p>Les Alpes du Sud sont une zone géographique naturelle des Alpes Françaises, située principalement dans la région Provence-Alpes-Côte-d'Azur, le reste se trouvant dans le département de la Drôme.</p>
 
 		<div class="imgCenter">
-			<h3><small>Auron</small></h3>
 			<img src="public/images/alpesDuSud.JPG" alt="Auron" />
 		</div>
 

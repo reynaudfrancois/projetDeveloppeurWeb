@@ -29,7 +29,7 @@ function postComment() {
 
 			$error = '';
 
-		header("Location: comments.php");
+		header("Location: commentsController.php");
 		} else {
 			//echo "<p>Tu dois obligatoirement rentrer un nom, un prénom et un commentaire. <a href="commentaires.php#comment">Clique ici</a> pour revenir à la page des commentaires.</p>";
 			$error = "<p>Vous devez obligatoirement rentrer un nom, un prénom et un commentaire.</p>";

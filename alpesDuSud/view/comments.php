@@ -8,9 +8,9 @@
 
 		<button class="button" id="addComment">AJOUTER UN COMMENTAIRE<br /><i class="fas fa-angle-down" id="faAngle"></i></button>
 
-		<form id="commentForm" action="comments.php" method="post" role="form">
+		<form id="commentForm" action="../controller/commentsController.php" method="post" role="form">
 
-			<div id="error" style="color: <?php if ($error != '') {echo 'red;';} ?>">
+			<div id="error" style="color: <?php if ($error != "") {echo 'red;';} ?>">
 				<?= $error ?>
 			</div>
 		

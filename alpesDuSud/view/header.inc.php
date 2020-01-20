@@ -20,7 +20,7 @@
 				<a href="/projetDeveloppeurWeb/alpesDuSud/view/path.php">Itinéraire</a>
 				<a href="/projetDeveloppeurWeb/alpesDuSud/view/story.php">Récit</a>
 				<a href="/projetDeveloppeurWeb/alpesDuSud/view/photos.php">Photos</a>
-				<a href="/projetDeveloppeurWeb/alpesDuSud/controller/comments.php">Commentaires</a>
+				<a href="/projetDeveloppeurWeb/alpesDuSud/controller/commentsController.php">Commentaires</a>
 			</nav>
 
 			<div id="title">

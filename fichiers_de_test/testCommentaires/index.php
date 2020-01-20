@@ -17,11 +17,17 @@ if (isset($_GET["action"])) {
 				}
 				$content = $_POST["content"];
 				addComment($name, $firstname, $email, $content);
-				header("Location: index.php");
+				header("Location: index.php?action=viewComments");
 			} else {
 				$error = "<p>Vous devez obligatoirement rentrer un nom, un prénom, et un commentaire !</p>";
+				viewComments($error);
 			}
 		}
+	} else if ($_GET["action"] == "viewComments") {
+		$error ="";
+		viewComments($error);
 	}
-} 
-require "commentsView.php";
+} else {
+	$error = "";
+	viewComments($error);
+}

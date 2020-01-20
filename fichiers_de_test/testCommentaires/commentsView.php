@@ -10,7 +10,7 @@
 
 		<button class="button" id="addComment">AJOUTER UN COMMENTAIRE<br /><i class="fas fa-angle-down" id="faAngle"></i></button>
 
-		<form id="commentForm" action="index.php" method="post" role="form">
+		<form id="commentForm" action="index.php?action=addComment" method="post" role="form">
 
 			<div id="error" style="color: <?php if ($error != "") {echo 'red;';} ?>">
 				<?= $error ?>
@@ -68,11 +68,15 @@
 			<hr />
 			<p class="justifyAlign"><strong><?= htmlspecialchars($data["firstname"]) . " " . htmlspecialchars($data["name"]) ?></strong><?= htmlspecialchars($data["creationDate"]) ?></p>
 			<p class="justifyAlign"><?= htmlspecialchars($data["content"]) ?></p>
+
+			<!--<p><?= $newComment ?></p>-->
 	<?php 
 		}
 		$reqAllComments->closeCursor();
 	} 
 	?>
+
+
 
 	<img src="../public/images/imageDeFond.JPG" alt="Névé" />
 

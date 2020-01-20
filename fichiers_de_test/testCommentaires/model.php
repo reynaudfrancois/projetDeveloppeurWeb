@@ -2,8 +2,9 @@
 
 function postComment($name, $firstname, $email, $content) {
 	$db = dbConnect();
-	$req = $db->prepare("INSERT INTO message(name, firstname, email, content) VALUES(?, ?, ?, ?)");
-	$req->execute(array($name, $firstname, $email, $content));
+	$comment = $db->prepare("INSERT INTO message(name, firstname, email, content) VALUES(?, ?, ?, ?)");
+	$newComment=$comment->execute(array($name, $firstname, $email, $content));
+	return $newComment;
 }
 
 function countComments () {

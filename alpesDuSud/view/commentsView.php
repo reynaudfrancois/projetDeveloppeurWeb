@@ -1,3 +1,9 @@
+<?php  
+ob_start();
+require"header.inc.php";
+$header = ob_get_clean();
+?>
+
 <?php ob_start(); ?>
 
 <main id="comments">
@@ -10,7 +16,7 @@
 
 		<form id="commentForm" action="comments.php?action=addComment" method="post" role="form">
 
-			<div id="error" style="color: <?php if ($error != "") {echo 'red;';} ?>">
+			<div id="error" style="color: <?php if ($error != '') {echo 'red;';} ?>">
 				<?= $error ?>
 			</div>
 		
@@ -66,20 +72,22 @@
 			<hr />
 			<p class="justifyAlign"><strong><?= htmlspecialchars($data["firstname"]) . " " . htmlspecialchars($data["name"]) ?></strong><?= htmlspecialchars($data["creationDate"]) ?></p>
 			<p class="justifyAlign"><?= htmlspecialchars($data["content"]) ?></p>
-
-			<!--<p><?= $newComment ?></p>-->
 	<?php 
 		}
 		$reqAllComments->closeCursor();
-	} 
+	}
 	?>
-
-
 
 	<img src="../public/images/imageDeFond.JPG" alt="Névé" />
 
 </main>	
 
-<?php $content = ob_get_clean(); ?>
+<?php $main = ob_get_clean(); ?>
+
+<?php
+ob_start();
+require "footer.inc.php";
+$footer = ob_get_clean();
+?>
 
 <?php require "commentsTemplate.php"; ?>

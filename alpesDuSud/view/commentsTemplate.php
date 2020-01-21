@@ -1,7 +1,5 @@
-<?php require "header.inc.php"; ?>
+<?= $header ?>
 
-	<body>
-		<?= $content ?>
-	</body>
-
-<?php require "footer.inc.php"; ?>
+<?= $main ?>
+	
+<?= $footer ?>

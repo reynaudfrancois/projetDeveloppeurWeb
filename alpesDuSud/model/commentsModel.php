@@ -2,7 +2,7 @@
 
 function postComment($name, $firstname, $email, $content) {
 	$db = dbConnect();
-	$comment = $db->prepare("INSERT INTO message(name, firstname, email, content) VALUES(?, ?, ?, ?)");
+	$comment = $db->prepare("INSERT INTO message (name, firstname, email, content) VALUES (?, ?, ?, ?)");
 	$newComment=$comment->execute(array($name, $firstname, $email, $content));
 	return $newComment;
 }

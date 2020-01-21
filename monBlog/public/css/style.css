@@ -63,9 +63,9 @@ header {
 	padding: 10em 0;
 }
 
-.underlined {
+/*.underlined {
 	text-decoration: underline;
-}
+}*/
 
 /*MAIN (SAUF LA PAGINATION)*/
 
@@ -104,21 +104,28 @@ aside {
 }
 
 .imgAbstract {
-	max-width: 375px;
-	max-height: 600px;
+	max-width: 376px;
+	max-height: 282px;
 	width: 90%;
 	height: auto;
 }
 
-.imgAbstract, #contact {
+/* dans le sommaire et l'article */
+.imgAbstract, #imgCenter, #contact {
 	text-align: center;
 }
 
-	/* MAIN #contact */
+	/* MAIN article */
 
-#contactForm {
+.imgArticle {
+	max-width: 564px;
+	max-height: 423px;
+}
+
+#commentForm {
 	background-color: #41d1cc;
 	padding: 30px 0;
+	display: none;
 }
 
 .field {
@@ -145,19 +152,24 @@ aside {
 	color: #fff;
 }
 
-#send {
+.button {
 	background-color: #000;
 	color: #fff;
 	border: 2px solid #fff;
 	padding: 5px 10px;
 }
 
-#send:hover {
+.button:hover {
 	cursor: pointer;
 }
 
-#thanks {
-	font-weight: bold;
+/*postView*/
+.articleTitle {
+	margin: 5px 0;
+}
+
+#comments {
+	text-align: center;
 }
 
 /*FOOTER*/
@@ -177,7 +189,7 @@ footer {
 
 	/* MAIN #comments */
 
-.commentForm {
+/*.commentForm {
 	background-color: #41d1cc;
 	padding: 1px 0 30px;
 }
@@ -223,4 +235,4 @@ footer {
 
 .justifyAlign {
 	text-align: justify;
-}
+}*/

@@ -6,7 +6,8 @@ try {
 			listPostsView();
 		} else if ($_GET["action"] == "postView") {
 			if (isset($_GET["id"]) && $_GET["id"]>0) {
-				postView();
+				$error = "";
+				postView($error);
 			} else {
 				throw new Exception ("Aucun identifiant de billet envoyé");
 			}
@@ -23,8 +24,10 @@ try {
 						$email = "UNKNOWN";
 					}
 					addComment($id, $name, $firstname, $email, $content);
+					header("Location: index.php?action=postView&id=" . $id . "/#comments");
 				} else {
-					throw new Exception ("Vous devez obligatoirement rentrer un nom, un prénom et un commentaire !");
+					$error = "<p>Vous devez obligatoirement rentrer un nom, un prénom, et un commentaire !</p>";
+					postView($error);
 				}
 			} else {
 				throw new Exception ("Aucun identifiant de billet envoyé !");

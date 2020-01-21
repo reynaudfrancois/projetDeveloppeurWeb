@@ -37,14 +37,14 @@ $header = ob_get_clean();
 
 			<div class="field">
 				<label for="content">Votre commentaire *</label>
-				<textarea name="content" rows="20px" cols="100px" id="content" value=""></textarea>
+				<textarea name="content" rows="20px" cols="100px" id="content"></textarea>
 			</div>
 
 			<div id="required">				
 				<p><strong>* Ces informations sont requises.</strong></p>
 			</div>
 			
-			<div><input type="submit" class="button" value="Envoyer" /></div>
+			<div><input type="submit" name="send" class="button" value="Envoyer" /></div>
 
 		</form>
 

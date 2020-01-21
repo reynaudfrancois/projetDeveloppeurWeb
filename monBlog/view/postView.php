@@ -1,4 +1,4 @@
-<?php $title = "François REYNAUD - Récit de voayage"; ?>
+<?php $title = "François REYNAUD - Récit de voyages"; ?>
 
 <?php ob_start(); ?>
 
@@ -8,14 +8,16 @@
 
 	<article>
 
-		<p><a href="index.php?action=listPostsView">Retour à la liste des billets</a></p>
-
-		<div><?= "<img src='" . $post["image"] . "' alt='image_" . $post["id"] . "' />" ?></div>
+		<p><a href="index.php?action=listPostsView"><small>Retour à la liste des billets</small></a></p>
 
 		<div>
-			<h3><?= $post["location"] ?></h3>
-			<h1><?= $post["title"] ?></h1>
-			<h3><?= $post["period"] ?></h3>
+			<h1 class="title"><?= $post["title"] ?></h1>
+			<h3 class="title"><?= $post["location"] ?></h3>
+			<h3 class="title"><em><?= $post["period"] ?></em></h3>
+		</div>
+
+		<div id="imgCenter">
+			<?= "<img class='imgArticle' src='" . $post["image"] . "' alt='image_" . $post["id"] . "' />" ?>
 		</div>
 
 		<div class="paragraph">
@@ -72,52 +74,73 @@
 
 		<h4><?= $post["dated"] ?></h4>
 
-		<p><a href="index.php?action=listPostsView">Retour à la liste des billets</a></p>
-
 	</article>
 
-	<div>
-		<button></button>
-		<?= "<form action='index.php?action=addComment&id=" . $post['id'] . "' method='post' role='form' class='commentForm'>" ?>
-			<div class="field contactInformations">
-				<label for="name">Nom *</label><br>
-				<input type="text" id="name" name="name">
+	<div id="comments">
+
+		<h2 class="generalTitle">LES COMMENTAIRES</h2>
+		
+		<button class="button" id="addComment">AJOUTER UN COMMENTAIRE<br /><i class="fas fa-angle-down" id="faAngle"></i></button>
+
+		<?= "<form action='index.php?action=addComment&id=" . $post['id'] . "' method='post' role='form' id='commentForm'>" ?>
+			<div id="error" style="color: <?php if ($error != '') {echo 'red;';} ?>">
+				<?= $error ?>
 			</div>
 			<div class="field contactInformations">
-				<label for="firstname">Prénom *</label><br>
-				<input type="text" id="firstname" name="firstname">
+				<label for="name">Votre nom *</label><br>
+				<input type="text" id="name" name="name" value="">
 			</div>
 			<div class="field contactInformations">
-				<label for="name">Email</label><br>
-				<input type="email" id="email" name="email">
+				<label for="firstname">Votre prénom *</label><br>
+				<input type="text" id="firstname" name="firstname" value="">
+			</div>
+			<div class="field contactInformations">
+				<label for="name">Votre email</label><br>
+				<input type="email" id="email" name="email" value="">
 			</div>
 			<div class="field">
-				<label for="content">Commentaire *</label><br>
-				<textarea id="content" name="content"></textarea>
+				<label for="content">Votre commentaire *</label><br>
+				<textarea id="content" rows="20px" cols="100px" name="content"></textarea>
 			</div>
-			<div class="required">
+			<div id="required">
 				<p><strong>* Ces informations sont requises.</strong></p>
 			</div>
 			<div>
 				<input type="submit" name="send" value="Envoyer" class="button">
 			</div>
 		<?= "</form>" ?>
+
+		<script type="text/javascript" src="public/javascript/script.js"></script>
+
 	</div>
 
-	<div class="comments">
-		<h4><em>Commentaires</em></h4>
-
-		<?php
-		while ($comment=$comments->fetch()) {
-		?>
-			<p><strong><?= htmlspecialchars($comment["firstname"] . " ") . htmlspecialchars($comment["name"]) ?>,</strong> le <?= $comment["dateComment"] ?></p>
-			<p><?= nl2br(htmlspecialchars($comment["content"])) ?></p>
-		<?php
+	<?php
+	if ($nbComments == 0) { 
+	?>
+		<p class="justifyAlign" id="nbComments"><em><strong>Aucun commentaire</strong></em></p>
+	<?php 
+	} else {
+		if ($nbComments == 1) {
+	?>
+			<p class="justifyAlign" id="nbComments"><em><strong><?=  $nbComments ?> commentaire</strong></em></p>
+	<?php
+		} else { 
+	?>
+			<p class="justifyAlign" id="nbComments"><em><strong><?=  $nbComments ?> commentaires</strong></em></p>
+	<?php 
 		}
-		?>
-	</div>
+		while ($data=$reqAllComments->fetch()) {
+	?>
+			<hr />
+			<p class="justifyAlign"><strong><?= htmlspecialchars($data["firstname"]) . " " . htmlspecialchars($data["name"]) ?></strong><?= htmlspecialchars($data["dateComment"]) ?></p>
+			<p class="justifyAlign"><?= htmlspecialchars($data["content"]) ?></p>
+	<?php 
+		}
+		$reqAllComments->closeCursor();
+	}
+	?>
 
-	<p><a href="index.php?action=listPostsView">Retour à la liste des billets</a></p>
+	<p><a href="index.php?action=listPostsView"><small>Retour à la liste des billets</small></a></p>
 
 </main>
 

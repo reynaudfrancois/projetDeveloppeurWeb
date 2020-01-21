@@ -39,14 +39,17 @@ function listPostsView() {
 	require "view/listPostsView.php";	
 }
 
-function postView() {
+function postView($errorMessage) {
+	$error = $errorMessage;
+	$nbComments =  countComments($_GET["id"]);
 	$post = selectPost($_GET['id']);
-	$comments = selectComments($_GET['id']);
+	$reqAllComments = selectComments($_GET['id']);
 	require("view/postView.php");
 }
 
 function addComment($postId, $name, $firstname, $email, $content) {
 	$newComment = postComment($postId, $name, $firstname, $email, $content);
+	var_dump($newComment);
 
 	if ($newComment == false) {
 		throw new Exception('Impossible d\'ajouter le commentaire !');

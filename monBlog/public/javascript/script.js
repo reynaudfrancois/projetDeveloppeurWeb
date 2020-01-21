@@ -2,11 +2,6 @@
 /*var nav = document.querySelector("nav");
 nav.style.position = "relative";
 nav.style.width = "100%";*/
-
-// supression de l'image de fond et du lien vers mon blog
-/*document.getElementById("title").style.display = "none";
-document.getElementById("blog").style.display = "none";*/
-
 var addComment = document.getElementById("addComment");
 var commentForm = document.getElementById("commentForm");
 var faAngle = document.getElementById("faAngle");
@@ -15,7 +10,7 @@ var faAngle = document.getElementById("faAngle");
 
 var error = document.getElementById("error");
 commentForm.style.display = "none";
-if (error.style.color == "red") {
+if (error.innerHTML.trim() != "") {
 	commentForm.style.display = "block";
 	faAngle.classList.replace("fa-angle-down", "fa-angle-up");
     document.location.href += "#comments";
@@ -24,8 +19,6 @@ else {
 	commentForm.style.display = "none";
     faAngle.classList.replace("fa-angle-up", "fa-angle-down");
 }
-
-/*console.log(document.getElementById("error").innerHTML);*/
 
 function commentAdd() {
     if (commentForm.style.display == "none") {

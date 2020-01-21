@@ -24,7 +24,6 @@ function listPostsView() {
 
 	// PREMIER POST AFFICHE
 	function firstPostDisplayed($nbPostsPerPage) {
-		//$nbPostsPerPage = nbPostsPerPage();
 		$page = actualPage();
 		$firstPostDisplayed = $nbPostsPerPage*($page-1);
 		return $firstPostDisplayed;

@@ -34,7 +34,7 @@ var changeMode = document.getElementById("changeMode");
 var stop = document.getElementById("stop");
 var pause = document.getElementById("pause");
 var play = document.getElementById("play");
-var img = document.getElementById("imageSlider");
+var img = document.getElementById("imgSlider");
 
 // pour voir l'image suivante
 function nextImg() {

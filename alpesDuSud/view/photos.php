@@ -7,7 +7,7 @@
 	<div class="imgCenter">
 
 		<div>
-			<img name="slide" src="../public/images/alpiluberon/0.JPG" id="imageSlider" alt="Alpilles - Lubéron" />
+			<img name="slide" src="../public/images/alpiluberon/0.JPG" id="imgSlider" alt="alpesDuSud" />
 			<h4 id="counter"></h4>				
 		</div>
 

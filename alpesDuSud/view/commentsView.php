@@ -55,16 +55,16 @@ $header = ob_get_clean();
 	<?php
 	if ($nbComments == 0) { 
 	?>
-		<p class="justifyAlign" id="nbComments"><em><strong>Aucun commentaire</strong></em></p>
+		<p class="justifyAlign"><em><strong>Aucun commentaire</strong></em></p>
 	<?php 
 	} else {
 		if ($nbComments == 1) {
 	?>
-			<p class="justifyAlign" id="nbComments"><em><strong><?=  $nbComments ?> commentaire</strong></em></p>
+			<p class="justifyAlign"><em><strong><?=  $nbComments ?> commentaire</strong></em></p>
 	<?php
-		} else { 
+		} else {
 	?>
-			<p class="justifyAlign" id="nbComments"><em><strong><?=  $nbComments ?> commentaires</strong></em></p>
+			<p class="justifyAlign"><em><strong><?=  $nbComments ?> commentaires</strong></em></p>
 	<?php 
 		}
 		while ($data=$reqAllComments->fetch()) {

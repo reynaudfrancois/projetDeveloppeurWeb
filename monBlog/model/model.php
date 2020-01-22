@@ -30,7 +30,7 @@ function selectPost ($postId) {
 // POUR RECUPERER LES COMMENTAIRES D'UN POST
 function selectComments ($postId) {
 	$db = dbConnect() ;
-	$comments = $db->prepare ('SELECT id, name, firstname, content, DATE_FORMAT(dated, "%d/%m/%Y à %H:%i") AS dateComment FROM comments WHERE id = ? ORDER BY dateComment DESC');
+	$comments = $db->prepare ('SELECT id, name, firstname, content, DATE_FORMAT(dated, "%d/%m/%Y à %H:%i") AS dateComment FROM comments WHERE id = ? ORDER BY id_comment DESC');
 	$comments->execute(array($postId));
 	return $comments;
 }

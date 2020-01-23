@@ -105,7 +105,7 @@ aside {
 }
 
 /* dans le sommaire et l'article */
-.imgAbstract, #imgCenter, #contact {
+#imgCenter, #contact {
 	text-align: center;
 }
 

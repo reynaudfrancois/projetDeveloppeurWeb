@@ -27,7 +27,7 @@ h3 {
 	font-size: 1.5rem;
 }
 
-h1, h2, h3, nav {
+h1, h2, h3, nav, .center {
 	text-align: center;
 }
 
@@ -114,7 +114,7 @@ aside {
 
 	/* MAIN article */
 
-.imgArticle {
+#imgArticle {
 	max-width: 564px;
 	max-height: 423px;
 }

@@ -35,20 +35,16 @@ hr {
 	color: #d3d3d3;
 }
 
-h1, h2, h3, nav, .center {
-	text-align: center;
-}
-
 a, nav {
 	color: #0000ff;
 	font-size: 1.7rem;
 }
 
-.readArticle {
-	text-decoration: none;
+h1, h2, h3, nav, .center {
+	text-align: center;
 }
 
-/*HEADER + PAGINATION*/
+/* HEADER */
 
 header {
 	background-image: url("../images/imageDeFond.JPG");
@@ -62,16 +58,25 @@ header {
 	padding: 10em 0;
 }
 
-
-/*MAIN (SAUF LA PAGINATION)*/
+/* MAIN */
 
 main {
 	margin-top: 20px;
 }
 
-.abstractArticle {
-	border: 1px solid #808080;
-	margin: 20px 0;
+section {
+	width: 60%;
+	margin-right: 1%;
+}
+
+aside {
+	width: 37%;
+	margin-left: 1%;
+	padding: 0 20px 5px;
+}
+
+section article {
+	text-align: justify;
 }
 
 section, aside {
@@ -82,19 +87,13 @@ section, aside {
 	vertical-align: top;
 }
 
-section {
-	width: 60%;
-	margin-right: 1%;
+.abstractArticle {
+	border: 1px solid #808080;
+	margin: 20px 0;
 }
 
-section article {
-	text-align: justify;
-}
-
-aside {
-	width: 37%;
-	margin-left: 1%;
-	padding: 0 20px 5px;
+.readArticle {
+	text-decoration: none;
 }
 
 .imgAbstract {

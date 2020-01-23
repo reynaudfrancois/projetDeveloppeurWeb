@@ -30,7 +30,7 @@
 	while ($data=$req->fetch()){
 	?>
 		<div class="abstractArticle">
-			<aside>
+			<aside class="center">
 				<h3><?= $data["location"] . "<br /><em>" . $data["period"] . " </em>"?></h3>
 				<img src="<?= $data['image'] ?>" alt="img<?= $data['id'] ?>" class="imgAbstract" />
 				<p><small><small><em>Mis en ligne : <?= $data["dated"] ?></em></small></small></p>

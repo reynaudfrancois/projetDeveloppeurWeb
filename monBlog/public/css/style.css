@@ -27,6 +27,14 @@ h3 {
 	font-size: 1.5rem;
 }
 
+a {
+	margin: 1.5%;
+}
+
+hr {
+	color: #d3d3d3;
+}
+
 h1, h2, h3, nav, .center {
 	text-align: center;
 }
@@ -34,14 +42,6 @@ h1, h2, h3, nav, .center {
 a, nav {
 	color: #0000ff;
 	font-size: 1.7rem;
-}
-
-a {
-	margin: 1.5%;
-}
-
-hr {
-	color: #d3d3d3;
 }
 
 .readArticle {
@@ -102,11 +102,6 @@ aside {
 	max-height: 282px;
 	width: 90%;
 	height: auto;
-}
-
-/* dans le sommaire et l'article */
-#imgCenter, #contact {
-	text-align: center;
 }
 
 	/* MAIN article */

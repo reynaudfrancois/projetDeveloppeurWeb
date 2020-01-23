@@ -38,7 +38,7 @@
 			<section class="center">
 				<h2><?= $data["title"] ?></h2>				
 				<article><?= $data["abstract"] ?></article>
-				<button class="readArticle"><a <?= "href='index.php?action=postView&id=" . $data["id"] . "' class='readArticle'" ?> >Lire</a></button>
+				<button><a <?= "href='index.php?action=postView&id=" . $data["id"] . "' class='readArticle'" ?> >Lire</a></button>
 			</section>
 		</div>
 	<?php

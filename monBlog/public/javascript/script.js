@@ -9,12 +9,8 @@ if (error.innerHTML.trim() != "") {
 	faAngle.classList.replace("fa-angle-down", "fa-angle-up");
     document.location.href += "#comments";
 }
-/*else {
-	commentForm.style.display = "none";
-    faAngle.classList.replace("fa-angle-up", "fa-angle-down");
-}*/
 
-function formOpen() {
+function openForm() {
     if (commentForm.style.display == "none") {
         commentForm.style.display = "block";
         faAngle.classList.replace("fa-angle-down", "fa-angle-up");
@@ -23,4 +19,4 @@ function formOpen() {
         faAngle.classList.replace("fa-angle-up", "fa-angle-down");
     }
 }
-addComment.addEventListener("click", formOpen);
+addComment.addEventListener("click", openForm);

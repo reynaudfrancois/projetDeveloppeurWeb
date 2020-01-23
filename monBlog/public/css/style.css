@@ -63,9 +63,6 @@ header {
 	padding: 10em 0;
 }
 
-/*.underlined {
-	text-decoration: underline;
-}*/
 
 /*MAIN (SAUF LA PAGINATION)*/
 
@@ -186,53 +183,3 @@ footer {
 	background-color: #98fb98;
 	margin-top: 40px;
 }
-
-	/* MAIN #comments */
-
-/*.commentForm {
-	background-color: #41d1cc;
-	padding: 1px 0 30px;
-}
-
-.field {
-	margin: 30px auto;
-}
-
-.contactInformations {
-	width: 50%;
-}
-
-.contactInformations input {
-	width: 100%;
-	height: 40px;
-	margin: 0;
-}
-
-.field textarea {
-	width: 96%;
-	height: 10rem;
-}
-
-.required {
-	margin-bottom: 20px;
-	color: #fff;
-}
-
-.button {
-	background-color: #000;
-	color: #fff;
-	border: 2px solid #fff;
-	padding: 5px 10px;
-}
-
-.button:hover {
-	cursor: pointer;
-}
-
-#nbComments {
-	color: #0000ff;
-}
-
-.justifyAlign {
-	text-align: justify;
-}*/

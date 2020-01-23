@@ -1,24 +1,22 @@
 <?php
-// COMPTAGE DES POSTS
+
 function nbPosts() {
 	$db = dbConnect();
-	$retour=$db->prepare("SELECT COUNT(*) AS nbArticles FROM posts");
-	$retour->execute();
-	$donnees=$retour->fetch();
-	$nbPosts=$donnees["nbArticles"];
+	$req=$db->prepare("SELECT COUNT(*) AS nbArticles FROM posts");
+	$req->execute();
+	$data=$req->fetch();
+	$nbPosts=$data["nbArticles"];
 	return $nbPosts;
 }
 
-// ON RECUPERE L'ENSEMBLE DES POSTS ET DE LEUR CONTENU
 function selectAllPosts () {
 $db = dbConnect();
 $nbPostsPerPage = nbPostsPerPage();
 $firstPostDisplayed = firstPostDisplayed($nbPostsPerPage);
-$reponse=$db->query("SELECT * FROM posts ORDER BY id DESC LIMIT $firstPostDisplayed, $nbPostsPerPage");
-return $reponse;
+$answer=$db->query("SELECT * FROM posts ORDER BY id DESC LIMIT $firstPostDisplayed, $nbPostsPerPage");
+return $answer;
 }
 
-// POUR RECUPERER LE CONTENU ENTIER D'UN SEULPOST
 function selectPost ($postId) {
 	$db = dbConnect ();
 	$req=$db->prepare('SELECT * FROM posts WHERE id = ?');
@@ -27,7 +25,6 @@ function selectPost ($postId) {
 	return $post;
 }
 
-// POUR RECUPERER LES COMMENTAIRES D'UN POST
 function selectComments ($postId) {
 	$db = dbConnect() ;
 	$comments = $db->prepare ('SELECT id, name, firstname, content, DATE_FORMAT(dated, "%d/%m/%Y à %H:%i") AS dateComment FROM comments WHERE id = ? ORDER BY id_comment DESC');
@@ -35,7 +32,6 @@ function selectComments ($postId) {
 	return $comments;
 }
 
-// POUR COMPTER LES COMMENTAIRES D'UN POST
 function countComments ($postId) {
 	$db = dbConnect();
 	$req=$db->prepare("SELECT COUNT(*) AS nbComments FROM comments WHERE id = ? ");
@@ -45,8 +41,6 @@ function countComments ($postId) {
 	return $nbComments;
 }
 
-
-// POUR AJOUTER UN NOUVEAU COMMENTAIRE
 function postComment ($postId, $name, $firstname, $email, $content) {
 	$db=dbConnect();
 	$commentAdded = $db->prepare("INSERT INTO comments(id, name, firstname, email, content) VALUES (?, ?, ?, ?, ?)");
@@ -54,7 +48,6 @@ function postComment ($postId, $name, $firstname, $email, $content) {
 	return $newComment;
 }
 
-// ON APPELLE LA BDD
 function dbConnect() {
 	try {
 		$db  = new PDO("mysql:host=localhost;dbname=blog;charset=utf8", "freynaut", "admin2018");

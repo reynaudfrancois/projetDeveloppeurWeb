@@ -14,6 +14,7 @@ try {
 		} else if ($_GET["action"] == "addComment") {
 			if (isset($_GET["id"]) && $_GET["id"] > 0) {
 				$id = $_GET["id"];
+				// comparer !empty avec isset et =""
 				if (!empty($_POST["name"]) && !empty($_POST["firstname"]) && !empty($_POST["content"])) {
 					$name = $_POST["name"];
 					$firstname = $_POST["firstname"];
@@ -36,7 +37,6 @@ try {
 	} else {
 	 	listPostsView ();
 	}
-}
-catch(Exception $e) {
+} catch(Exception $e) {
 	echo "Erreur : " . $e->getMessage();
 }

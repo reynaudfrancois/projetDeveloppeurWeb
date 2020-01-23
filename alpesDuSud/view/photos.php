@@ -7,17 +7,11 @@
 	<div class="imgCenter">
 
 		<div>
-			<img name="slide" src="../public/images/alpiluberon/0.JPG" id="imgSlider" alt="alpesDuSud" />
-			<h4 id="counter"></h4>				
+			<button id="before"> < </button>
+			<img name="slide" src="../public/images/alpesDuSud/0.JPG" id="imgSlider" alt="alpesDuSud" />
+			<button id="next"> > </button>
+			<h4 id="counterImage"></h4>				
 		</div>
-
-		<button id="before"> < </button>
-		<button id="slideshow">Diaporama</button>
-		<button id="changeMode">Diaporama</button>
-		<button id="next"> > </button>
-		<button id="stop">Stop</button>
-		<button id="pause">Pause</button>
-		<button id="play">Lecture</button>
 
 		<script type="text/javascript" src="../public/javascript/slider.js"></script>		
 

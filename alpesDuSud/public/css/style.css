@@ -140,8 +140,18 @@ main img {
 	height: auto;
 }
 
-#changeMode, #stop, #pause, #play {
-	display: none;
+#before, #next {
+	background-color: #a9a9a9;
+	color : #fff;
+	margin: 10px;
+	border-radius: 100%;
+	width: 50px;
+	height: 50px;
+	border: none;
+}
+
+#before, #next, #imgSlider {
+	vertical-align: middle;
 }
 
 	/* MAIN #comments */

@@ -133,6 +133,11 @@ main img {
 
 	/* MAIN #photos */
 
+#sliderContainer {
+	width: 70vw;
+	height : 52.5vw;
+}
+
 #imgSlider {
 	max-width: 70vw;
 	max-height: 70vh;
@@ -150,7 +155,8 @@ main img {
 	border: none;
 }
 
-#before, #next, #imgSlider {
+#before, #next, #sliderContainer {
+	display: inline-block;
 	vertical-align: middle;
 }
 

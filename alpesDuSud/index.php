@@ -47,9 +47,9 @@
 			<p>Un an après, j'ai décidé de me lancer, à mon tour, dans ma première grande randonnée.</p>
 		</article>
 
-	</section>
+	</section><!--
 
-	<aside>
+	--><aside>
 
 		<h3 class="subTitle">LES ALPES DU SUD</h3>
 		<p>Les Alpes du Sud sont une zone géographique naturelle des Alpes Françaises, située principalement dans la région Provence-Alpes-Côte-d'Azur, le reste se trouvant dans le département de la Drôme.</p>
@@ -60,7 +60,7 @@
 
 		<p>La ligne de crêtes séparant les Alpes du Sud de celles du Nord suit la limite Sud du Vercors, le Col de la Croix-Haute, les crêtes au Sud du Dévoluy, le Col Bayard, la limite sud des Ecrins, les Cols du Lautaret et du Galibier, et le fond de la vallée de la Clarée.</p>
 
-		</p>Les massifs les plus connus des Alpes du Sud sont :</p>
+		<p>Les massifs les plus connus des Alpes du Sud sont :</p>
 		<ul>
 			<li>l'Arrière-Pays Niçois,</li>
 			<li>le Mercantour,</li>
@@ -71,7 +71,7 @@
 			<li>et le Vercors, en partie seulement inclus dans les Alpes du Sud.</li>
 		</ul>
 
-		<a href="https://fr.wikipedia.org/wiki/Alpes_du_Sud_(France)" target="new"><small>Source : Wikipedia</small></a>
+		<a href="https://fr.wikipedia.org/wiki/Alpes_du_Sud_(France)" target="new"  class="proportionalFontSize"><small>Source : Wikipedia</small></a>
 		
 	</aside>
 

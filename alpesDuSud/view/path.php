@@ -20,19 +20,19 @@
 
 		<p>Enfin, le dernier jour, j'ai remonté la Guisane jusqu'au hameau du Lauzet, pour passer dans le massif des Cerces. J'ai gravi le Col de la Ponsonnière, situé juste en dessous du Galibier, et qui a marqué le fin des Alpes du Sud. De là, je suis descendu sur Valloire en passant par la Vallée de l'Aiguille Noire.</p>
 
-	</section>
+	</section><!--
 
-	<aside>
+	--><aside>
 
 		<h3 class="subTitle">LA VIA ALPINA</h3>
 
 		<p>J'ai en grande partie suivi la Via Alpina, qui est un ensemble d'itinéraires traversant les Alpes, entre Monaco et Trieste, en passant par les 8 pays alpins : Monaco, la France, l'Italie, la Suisse, le Liechtenstein, l'Autriche, l'Allemagne, et la Slovénie.</p>
 
 		<div class="imgCenter">
-			<h3>La Via Alpina</h3>
+			<h3 class="proportionalFontSize">La Via Alpina</h3>
 			<img src="../public/images/imgPath/viaAlpina.jpg" alt="La Via Alpina" />
 			<br />
-			<a href="http://www.via-alpina.org/" target="new">Site web : www.via-alpina.org</a>
+			<a href="http://www.via-alpina.org/" target="new" class="proportionalFontSize">Site web : www.via-alpina.org</a>
 		</div>
 
 		<p>La Via Alpina comprend 5 parcours de couleurs différentes, totalisant plus de 5000 km de trajet et 342 étapes.</p>
@@ -43,7 +43,7 @@
 
 		<p>A noter qu'il existe un 9<sup>ème</sup> pays alpin, par lequel la Via Alpina ne passe pas : la Hongrie. Toutefois, seule une petite portion, à l'extrémité Ouest de cet état, appelée Alpokalja (Préalpes en hongrois), est incluse dans les Alpes.</p>
 
-		<a href="https://fr.wikipedia.org/wiki/Via_Alpina" target="new"><small>Source : Wikipedia</small></a>
+		<a href="https://fr.wikipedia.org/wiki/Via_Alpina" target="new"  class="proportionalFontSize"><small>Source : Wikipedia</small></a>
 
 	</aside>
 

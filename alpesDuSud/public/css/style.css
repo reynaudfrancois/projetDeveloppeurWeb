@@ -52,9 +52,9 @@ a, .storyParagraphTitle, #nbComments {
 /*HEADER*/
 
 header {
-	background-image: url("../images/imageDeFond.JPG");
+	background-image: url("../images/backgroundPicture.JPG");
 	background-size: cover;
-	background-position: 0 10%;
+	background-position: 100% 200%;
 	text-shadow: 2px 2px 2px #000;
 }
 
@@ -103,8 +103,7 @@ section {
 }
 
 aside {
-	float: right;
-	width: 37%;
+	width: 38%;
 	margin: 0 0 3% 1%;
 	padding: 0 20px 5px;
 }
@@ -133,16 +132,9 @@ main img {
 
 	/* MAIN #photos */
 
-#sliderContainer {
-	width: 70vw;
-	height : 52.5vw;
-}
-
-#imgSlider {
-	max-width: 70vw;
-	max-height: 70vh;
-	width: auto;
-	height: auto;
+#before, #next, #sliderContainer {
+	display: inline-block;
+	vertical-align: middle;
 }
 
 #before, #next {
@@ -155,9 +147,24 @@ main img {
 	border: none;
 }
 
-#before, #next, #sliderContainer {
-	display: inline-block;
-	vertical-align: middle;
+#sliderContainer {
+	width: 70vw;
+	max-height: 768px;
+}
+
+#imgSlider {
+	max-width: 70vw;
+	max-height: 70vh;
+	width: auto;
+	height: auto;
+}
+
+#before {
+	margin-left: 0;
+}
+
+#next {
+	margin-right: 0;
 }
 
 	/* MAIN #comments */
@@ -213,4 +220,52 @@ main img {
 #findMe {
 	background-color: #98fb98;
 	margin-top: 40px;
+}
+
+/* VERSION TABLETTE */
+
+@media screen and (max-width: 1250px) {
+	header {
+		background-image: url("../images/backgroundPictureBis.JPG");
+	}
+	p, ul, li, a, .proportionalFontSize, .storyParagraphTitle {
+		font-size: 2vw;
+	}
+	nav, nav a {
+		text-decoration: underline;
+		text-shadow: none;
+	}
+}
+
+/* VERSION SMARTPHONE */
+
+@media screen and (max-width: 575px) {
+	html {
+		width: 98%;
+	}
+
+	p, ul, li, button, a, h1, h2, h3, .generalTitle, .subTitle, .proportionalFontSize, .storyParagraphTitle {
+		font-size: 15px;
+	}
+
+	nav, nav a {
+		display: block;
+	}
+
+	nav {
+		position: static;
+		width: 100%;
+	}
+
+	section, aside, #story {
+		display: block;
+		width: 100%;
+		margin: 3% 0 3% 0;
+		padding: 1% 5px;
+	}
+
+	#title {
+		padding: 0;
+	}
+
 }

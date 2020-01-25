@@ -5,15 +5,18 @@ nav.style.width = "100%";
 document.getElementById("title").style.display = "none";
 document.getElementById("blog").style.display = "none";
 
-var n=230;
+var n=34;
 
 var images = new Array(n);
 for (var i=0 ; i<images.length ; i++) {
-    var j = "../public/images/alpesDuSud/" + (i).toString() + ".JPG";
+    var j = "../public/images/allImages/" + (i).toString() + ".JPG";
     images [i] = j;
 }
 
 var i=0;
+
+var titleImage = document.getElementById("titleImage");
+titleImage.innerHTML = tableTitlesImages[0];
 
 var counterImage = document.getElementById("counterImage");
 var counterDenominator = "/" + n;
@@ -44,6 +47,7 @@ function beforeImg() {
 function beforeNext () {
     document.slide.src = images[i];
     counterImage.innerHTML = (i+1) + counterDenominator;
+    titleImage.innerHTML = tableTitlesImages[i];
 }
 
 before.addEventListener("click",beforeImg);

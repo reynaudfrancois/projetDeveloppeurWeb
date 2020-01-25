@@ -178,3 +178,15 @@ footer small {
 	display: block;
 	padding-top: 10px;
 }
+
+@media screen and (max-width: 1000px) {
+	body {
+		font-size: 2vw;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	body {
+		font-size: 10px;
+	}
+}

@@ -54,7 +54,7 @@ a, .storyParagraphTitle, #nbComments {
 header {
 	background-image: url("../images/backgroundPicture.JPG");
 	background-size: cover;
-	background-position: 100% 200%;
+	background-position: 0% 10%;
 	text-shadow: 2px 2px 2px #000;
 }
 
@@ -235,21 +235,35 @@ main img {
 		text-decoration: underline;
 		text-shadow: none;
 	}
+	#before, #next {
+		width: 35px;
+		height: 35px;
+		margin: 5px;
+	}
 }
+
 
 /* VERSION SMARTPHONE */
 
 @media screen and (max-width: 575px) {
+
 	html {
 		width: 98%;
 	}
 
-	p, ul, li, button, a, h1, h2, h3, .generalTitle, .subTitle, .proportionalFontSize, .storyParagraphTitle {
+	p, ul, li, button, a, h1, h2, h3, h4, .generalTitle, .subTitle, .proportionalFontSize, .storyParagraphTitle {
 		font-size: 15px;
+	}
+
+	header {
+		background-image: none;
+		background-color: #0000ff;
+		text-transform: uppercase;
 	}
 
 	nav, nav a {
 		display: block;
+		font-size: 10px;
 	}
 
 	nav {
@@ -264,8 +278,18 @@ main img {
 		padding: 1% 5px;
 	}
 
-	#title {
-		padding: 0;
+	nav, #title {
+		padding: 10px 0;
+	}
+
+	#blog {
+		display: none;
+	}
+
+	#before, #next {
+		width: 20px;
+		height: 20px;
+		margin: 0;
 	}
 
 }

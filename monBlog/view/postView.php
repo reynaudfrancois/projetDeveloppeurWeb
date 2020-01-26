@@ -21,59 +21,63 @@
 		</div>
 
 		<!-- voir si je laisse les class "paragraph" et "imgParagraph" -->
-		<div class="paragraph">
-			<p><?= $post["paragraph1"] ?></p>
-			<div class="imgParagraph">
-				<?= "<img src='" . $post["image1"] . "' alt='image1_" . $post["id"] . "' />" ?>
-				<h3><?= $post["title_image1"] ?></h3>
-			</div>
-			<div class="imgParagraph">
-				<?= "<img src='" . $post["image2"] . "' alt='image2_" . $post["id"] . "' />" ?>
-				<h3><?= $post["title_image2"] ?></h3>
-			</div>
-		</div>
-
-		<div class="paragraph">
-			<p><?= $post["paragraph2"] ?></p>
-			<div class="imgParagraph">
-				<?= "<img src='" . $post["image3"] . "' alt='image3_" . $post["id"] . "' />" ?>
-				<h3><?= $post["title_image3"] ?></h3>
-			</div>
-			<div class="imgParagraph">
-				<?= "<img src='" . $post["image4"] . "' alt='image4_" . $post["id"] . "' />" ?>
-				<h3><?= $post["title_image4"] ?></h3>
+		<div class="partition">
+			<p class="paragraph"><?= $post["paragraph1"] ?></p>
+			<div class="center">
+				<div class="divImg">
+					<?= "<img src='" . $post["image1"] . "' alt='image1_" . $post["id"] . "' class='imgParagraph' />" ?>
+					<h3><?= $post["title_image1"] ?></h3>
+				</div>
+				<div class="divImg">
+					<?= "<img src='" . $post["image2"] . "' alt='image2_" . $post["id"] . "' class='imgParagraph' />" ?>
+					<h3><?= $post["title_image2"] ?></h3>
+				</div>
 			</div>
 		</div>
 
-		<div class="paragraph">
-			<p><?= $post["paragraph3"] ?></p>
-			<div class="imgParagraph">
-				<?= "<img src='" . $post["image5"] . "' alt='image5_" . $post["id"] . "' />" ?>
-				<h3><?= $post["title_image5"] ?></h3>
-			</div>
-			<div class="imgParagraph">
-				<?= "<img src='" . $post["image6"] . "' alt='image6_" . $post["id"] . "' />" ?>
-				<h3><?= $post["title_image6"] ?></h3>
-			</div>
-		</div>
-
-		<div class="paragraph">
-			<p><?= $post["paragraph4"] ?></p>
-			<div class="imgParagraph">
-				<?= "<img src='" . $post["image7"] . "' alt='image7_" . $post["id"] . "' />" ?>
-				<h3><?= $post["title_image7"] ?></h3>
-			</div>
-			<div class="imgParagraph">
-				<?= "<img src='" . $post["image8"] . "' alt='image8_" . $post["id"] . "' />" ?>
-				<h3><?= $post["title_image8"] ?></h3>
+		<div class="partition">
+			<p class="paragraph"><?= $post["paragraph2"] ?></p>
+			<div class="center">
+				<div class="divImg">
+					<?= "<img src='" . $post["image3"] . "' alt='image3_" . $post["id"] . "' class='imgParagraph' />" ?>
+					<h3><?= $post["title_image3"] ?></h3>
+				</div>
+				<div class="divImg">
+					<?= "<img src='" . $post["image4"] . "' alt='image4_" . $post["id"] . "' class='imgParagraph' />" ?>
+					<h3><?= $post["title_image4"] ?></h3>
+				</div>
 			</div>
 		</div>
 
-		<div class="paragraph">
-			<p><?= $post["paragraph5"] ?></p>
+		<div class="partition">
+			<p class="paragraph"><?= $post["paragraph3"] ?></p>
+			<div class="center">
+				<div class="divImg">
+					<?= "<img src='" . $post["image5"] . "' alt='image5_" . $post["id"] . "' class='imgParagraph' />" ?>
+					<h3><?= $post["title_image5"] ?></h3>
+				</div>
+				<div class="divImg">
+					<?= "<img src='" . $post["image6"] . "' alt='image6_" . $post["id"] . "' class='imgParagraph' />" ?>
+					<h3><?= $post["title_image6"] ?></h3>
+				</div>
+			</div>
 		</div>
 
-		<h4><?= $post["dated"] ?></h4>
+		<div class="partition">
+			<p class="paragraph"><?= $post["paragraph4"] ?></p>
+			<div class="center">
+				<div class="divImg">
+					<?= "<img src='" . $post["image7"] . "' alt='image7_" . $post["id"] . "' class='imgParagraph' />" ?>
+					<h3><?= $post["title_image7"] ?></h3>
+				</div>
+				<div class="divImg">
+					<?= "<img src='" . $post["image8"] . "' alt='image8_" . $post["id"] . "' class='imgParagraph' />" ?>
+					<h3><?= $post["title_image8"] ?></h3>
+				</div>
+			</div>
+		</div>
+
+		<h4><em>Mis en ligne : le <?= $currentDatePost["datePost"] ?></em></h4>
 
 	</article>
 

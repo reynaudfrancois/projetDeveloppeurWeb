@@ -40,6 +40,7 @@ function postView($errorMessage) {
 	$error = $errorMessage;
 	$nbComments =  countComments($_GET["id"]);
 	$post = selectPost($_GET['id']);
+	$currentDatePost = selectDatePost($_GET["id"]);
 	$reqAllComments = selectComments($_GET['id']);
 	require("view/postView.php");
 }

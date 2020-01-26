@@ -25,6 +25,14 @@ function selectPost ($postId) {
 	return $post;
 }
 
+function selectDatePost ($postId) {
+	$db = dbConnect ();
+	$req=$db->prepare('SELECT  DATE_FORMAT(dated, "%d/%m/%Y à %H:%i") AS datePost FROM posts WHERE id = ?');
+	$req->execute(array($postId));
+	$currentDatePost = $req->fetch();
+	return $currentDatePost;
+}
+
 function selectComments ($postId) {
 	$db = dbConnect() ;
 	$comments = $db->prepare ('SELECT id, name, firstname, content, DATE_FORMAT(dated, "%d/%m/%Y à %H:%i") AS dateComment FROM comments WHERE id = ? ORDER BY id_comment DESC');

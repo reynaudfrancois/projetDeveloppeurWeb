@@ -14,7 +14,7 @@ $header = ob_get_clean();
 
 		<button class="button" id="addComment">AJOUTER UN COMMENTAIRE<br /><i class="fas fa-angle-down" id="faAngle"></i></button>
 
-		<form id="commentForm" action="comments.php?action=addComment" method="post" role="form">
+		<form id="commentForm" action="comments.php?action=addComment" method="post">
 
 			<div id="error" style="color: <?php if ($error != '') {echo 'red;';} ?>">
 				<?= $error ?>
@@ -37,7 +37,7 @@ $header = ob_get_clean();
 
 			<div class="field">
 				<label for="content">Votre commentaire *</label>
-				<textarea name="content" rows="20px" cols="100px" id="content"></textarea>
+				<textarea name="content" id="content"></textarea>
 			</div>
 
 			<div id="required">				
@@ -48,8 +48,7 @@ $header = ob_get_clean();
 
 		</form>
 
-		<script type="text/javascript" src="../public/javascript/comments.js"></script>
-					
+		<script src="../public/javascript/comments.js"></script>					
 	</div>
 
 	<?php
@@ -67,7 +66,7 @@ $header = ob_get_clean();
 			<p class="justifyAlign"><em><strong><?=  $nbComments ?> commentaires</strong></em></p>
 	<?php 
 		}
-		while ($data=$reqAllComments->fetch()) {
+		while ($data = $reqAllComments->fetch()) {
 	?>
 			<hr />
 			<p class="justifyAlign"><strong><?= htmlspecialchars($data["firstname"]) . " " . htmlspecialchars($data["name"]) ?></strong><?= htmlspecialchars($data["creationDate"]) ?></p>

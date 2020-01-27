@@ -1,4 +1,4 @@
-<?php include "view/header.inc.php"; ?> 
+<?php require "view/header.inc.php"; ?> 
 
 <main id="index">
 
@@ -77,4 +77,4 @@
 
 </main>	
 
-<?php include "view/footer.inc.php"; ?>
+<?php require "view/footer.inc.php"; ?>

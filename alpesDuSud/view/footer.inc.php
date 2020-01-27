@@ -7,6 +7,13 @@
 					<a href="https://www.youtube.com/channel/UCnp9vbWd4sw0SnbX8Nw0EIQ" target="new"><i class="fab fa-youtube"></i></a>			
 			</div>
 			<small id="copyright">Copyright © 2020 François Reynaud</small>
+			<p>
+				<a href="http://jigsaw.w3.org/css-validator/check/referer">
+				    <img style="border:0;width:88px;height:31px"
+				        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+				        alt="CSS Valide !" />
+			  	</a>
+			</p>
 		</footer>
 
 	</body>

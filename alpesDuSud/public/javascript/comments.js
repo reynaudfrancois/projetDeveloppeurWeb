@@ -13,7 +13,7 @@ var error = document.getElementById("error");
 commentForm.style.display = "none";
 if (error.innerHTML.trim() != "") {
 	commentForm.style.display = "block";
-	faAngle.classList.replace("fa-angle-down", "fa-angle-up")
+	faAngle.classList.replace("fa-angle-down", "fa-angle-up");
 }
 
 function openForm() {

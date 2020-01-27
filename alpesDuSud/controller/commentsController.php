@@ -12,6 +12,3 @@ function viewcomments ($errorMessage) {
 	$reqAllComments = displayComments();
 	require "../view/commentsView.php";
 }
-
-
-

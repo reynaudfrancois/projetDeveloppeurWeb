@@ -1,4 +1,4 @@
-<?php include "header.inc.php"; ?> 
+<?php require "header.inc.php"; ?> 
 
 <main id="path">
 
@@ -49,4 +49,4 @@
 
 </main>	
 
-<?php include "footer.inc.php"; ?>
+<?php require "footer.inc.php"; ?>

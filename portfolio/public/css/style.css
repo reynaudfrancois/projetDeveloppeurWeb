@@ -24,7 +24,7 @@ a {
 	text-decoration: none;
 }
 
-#skills h2, #training div, #experience div, #returnTop {
+#skills h3, #training div, #experience div, #returnTop {
 	background-color: rgb(249, 249, 34);
 	border: 2px solid #0000ff;
 }
@@ -68,22 +68,18 @@ nav a {
 	border-radius: 100%;
 }
 
-.presentation {
-	margin: 10px;
-	color: #fff;
+#title {
+	margin-top: 60px;
+	background-color: #fff;
 }
 
 #job {
-	margin-top: 60px;
 	text-transform: uppercase;
-	background-color: white;
-	/*color: #000;*/
-	padding-top: 2px;
 }
 
 /* MAIN */
 
-main h1 {
+main h2 {
 	text-transform: uppercase;
 	margin-top: 0;
 	padding: 60px 0 50px;
@@ -91,11 +87,11 @@ main h1 {
 	background-color: #d3d3d3;
 }
 
-main h2, main h3, main p {
+main h3, main h4, main p {
 	margin: 10px;
 }
 
-main h2 {
+main h3 {
 	color: #ff0000;
 }
 
@@ -107,7 +103,7 @@ main em {
 	padding-bottom: 20px;
 }
 
-#skills h2 {
+#skills h3 {
 	text-transform: uppercase;
 	width: 40%;
 	display: inline-block;
@@ -126,7 +122,7 @@ main em {
 
 	/* MAIN #portfolio */
 
-#portfolio h1 {
+#portfolio h2 {
 	margin: 0;
 }
 
@@ -148,7 +144,7 @@ main em {
 	padding-bottom: 15px;
 }
 
-#contact h1 {
+#contact h2 {
 	padding: 10px;
 	margin-bottom: 0;
 }
@@ -194,11 +190,11 @@ footer small {
 
 @media screen and (max-width: 500px) {
 
-	body, h1, h2, h3, nav a, small {
+	body, h2, h3, h4, nav a, small {
 		font-size: 12px;
 	}
 
-	main h1 {
+	main h2 {
 		padding: 30px 0;
 	}
 
@@ -215,7 +211,7 @@ footer small {
 		margin: 10px 0 0;
 	}
 
-	#skills h2 {
+	#skills h3 {
 		width: 90%;
 	}
 

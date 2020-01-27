@@ -1,4 +1,4 @@
-<?php include "header.inc.php"; ?>
+<?php require "header.inc.php"; ?>
 
 <main id="photos">
 
@@ -16,14 +16,11 @@
 			<h4 id="counterImage"></h4>			
 		</div>
 
-		<script type="text/javascript" src="../public/javascript/titleImages.js"></script>
-		<script type="text/javascript" src="../public/javascript/slider.js"></script>		
+		<script src="../public/javascript/titleImages.js"></script>
+		<script src="../public/javascript/slider.js"></script>		
 
 	</div>
 
 </main>
 
-<?php include "footer.inc.php"; ?>
-			
-
-	
+<?php require "footer.inc.php"; ?>

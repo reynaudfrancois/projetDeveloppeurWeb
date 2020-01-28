@@ -47,4 +47,10 @@ function postView($errorMessage) {
 
 function addComment($postId, $name, $firstname, $email, $content) {
 	$newComment = postComment($postId, $name, $firstname, $email, $content);
+	if ($newComment === false) {
+        die("Impossible d'ajouter le commentaire !");
+    }
+    else {
+        header("Location: index.php?action=postView&id=" . $postId . "/#comments");
+    }
 }

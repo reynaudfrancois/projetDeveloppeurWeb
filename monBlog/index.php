@@ -14,25 +14,27 @@ try {
 		} else if ($_GET["action"] == "addComment") {
 			if (isset($_GET["id"]) && $_GET["id"] > 0) {
 				$id = $_GET["id"];
-				// comparer !empty avec isset et =""
-				if (!empty($_POST["name"]) && !empty($_POST["firstname"]) && !empty($_POST["content"])) {
-					$name = $_POST["name"];
-					$firstname = $_POST["firstname"];
-					$content = $_POST["content"];
-					if (isset($_POST["email"]) AND $_POST["email"]!="") {
-						$email = $_POST["email"];
+				if ($_SERVER["REQUEST_METHOD"] == "POST") {
+					if (isset($_POST["name"]) && trim($_POST["name"])!="" && isset($_POST["firstname"]) && trim($_POST["firstname"])!="" && isset($_POST["content"]) && trim($_POST["content"])!="") {
+						$name = htmlspecialchars($_POST["name"]);
+						$firstname = htmlspecialchars($_POST["firstname"]);
+						$content = htmlspecialchars($_POST["content"]);
+						if (isset($_POST["email"]) AND trim($_POST["email"])!="") {
+							$email = htmlspecialchars($_POST["email"]);
+						} else {
+							$email = "UNKNOWN";
+						}
+						addComment($id, $name, $firstname, $email, $content);
 					} else {
-						$email = "UNKNOWN";
+						$error = "<p>Vous devez obligatoirement rentrer un nom, un prénom, et un commentaire !</p>";
+						postView($error);
 					}
-					addComment($id, $name, $firstname, $email, $content);
-					header("Location: index.php?action=postView&id=" . $id . "/#comments");
-				} else {
-					$error = "<p>Vous devez obligatoirement rentrer un nom, un prénom, et un commentaire !</p>";
-					postView($error);
 				}
 			} else {
 				throw new Exception ("Aucun identifiant de billet envoyé !");
 			}
+		} else {
+			listPostsView();
 		}
 	} else {
 	 	listPostsView ();

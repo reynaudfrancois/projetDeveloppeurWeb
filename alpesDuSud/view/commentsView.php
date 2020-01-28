@@ -69,8 +69,8 @@ $header = ob_get_clean();
 		while ($data = $reqAllComments->fetch()) {
 	?>
 			<hr />
-			<p class="justifyAlign"><strong><?= htmlspecialchars($data["firstname"]) . " " . htmlspecialchars($data["name"]) ?></strong><?= htmlspecialchars($data["creationDate"]) ?></p>
-			<p class="justifyAlign"><?= htmlspecialchars($data["content"]) ?></p>
+			<p class="justifyAlign"><strong><?= $data["firstname"] . " " . $data["name"] ?></strong><?= $data["creationDate"] ?></p>
+			<p class="justifyAlign"><?= $data["content"] ?></p>
 	<?php 
 		}
 		$reqAllComments->closeCursor();

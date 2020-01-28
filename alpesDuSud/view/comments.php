@@ -6,11 +6,11 @@ if (isset($_GET["action"])) {
 	if ($_GET["action"] == "addComment") {
 		if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			if (isset($_POST["name"]) AND $_POST["name"]!="" AND isset($_POST["firstname"]) AND $_POST["firstname"]!="" AND isset($_POST["content"]) AND $_POST["content"]!="") {
-				$name = $_POST["name"];
-				$firstname = $_POST["firstname"];
-				$content = $_POST["content"];
+				$name = htmlspecialchars($_POST["name"]);
+				$firstname = htmlspecialchars($_POST["firstname"]);
+				$content = htmlspecialchars($_POST["content"]);
 				if (isset($_POST["email"]) AND $_POST["email"]!="") {
-					$email = $_POST["email"];
+					$email = htmlspecialchars($_POST["email"]);
 				} else {
 					$email = "UNKNOWN";
 				}

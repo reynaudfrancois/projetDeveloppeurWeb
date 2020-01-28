@@ -11,8 +11,8 @@
 		<a href="index.php?action=listPostsView"><small>Retour à la liste des billets</small></a>
 
 		<div>
-			<h1><?= $post["title"] ?></h1>
-			<h3><?= $post["location"] ?></h3>
+			<h2><?= $post["title"] ?></h2>
+			<h3 class="location"><?= $post["location"] ?></h3>
 			<h3><em><?= $post["period"] ?></em></h3>
 		</div>
 
@@ -83,11 +83,11 @@
 
 	<div id="comments">
 
-		<h2 class="generalTitle">LES COMMENTAIRES</h2>
+		<h2>LES COMMENTAIRES</h2>
 		
 		<button class="button" id="addComment">AJOUTER UN COMMENTAIRE<br /><i class="fas fa-angle-down" id="faAngle"></i></button>
 
-		<?= "<form action='index.php?action=addComment&id=" . $post["id"] . "' method='post' role='form' id='commentForm'>" ?>
+		<?= "<form action='index.php?action=addComment&id=" . $post["id"] . "' method='post' id='commentForm'>" ?>
 			<div id="error" style="color: <?php if ($error != '') {echo 'red;';} ?>">
 				<?= $error ?>
 			</div>

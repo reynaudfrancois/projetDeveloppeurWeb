@@ -15,7 +15,7 @@ if (isset($_GET["action"])) {
 					$email = "UNKNOWN";
 				}
 				addComment($name, $firstname, $email, $content);
-				header("Location: comments.php?action=viewComments");
+				//header("Location: comments.php?action=viewComments");
 			} else {
 				$error = "<p>Vous devez obligatoirement rentrer un nom, un prénom, et un commentaire !</p>";
 				viewComments($error);

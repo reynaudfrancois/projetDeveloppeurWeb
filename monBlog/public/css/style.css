@@ -1,7 +1,7 @@
 /*GENERAL*/
 
 * {
-	/*-webkit-box-sizing: border-box;*/
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	outline: none;
 }
@@ -10,10 +10,6 @@ html {
 	margin: auto;
 	width : 90%;
 }
-
-/*body {
-	font-size: 100%;
-}*/
 
 h1 {
 	font-size: 3rem;
@@ -47,14 +43,14 @@ footer, h1, h2, h3, nav, .center, #comments {
 	text-align: center;
 }
 
-.justifyAlign {
+.justifyAlign, .paragraph {
 	text-align: justify;
 }
 
 /* HEADER */
 
 header {
-	background-image: url("../images/imageDeFond.JPG");
+	background-image: url("../images/backgroundPicture.JPG");
 	background-size: cover;
 	background-position: 0 10%;
 	color: #fff;
@@ -82,16 +78,11 @@ section {
 	margin-right: 1%;
 }
 
-section article {
-	text-align: justify;
-}
-
 aside, section {
 	padding: 1% 50px;
-	text-align: justify;
 	font-size: 1.85rem;
 	display: inline-block;
-	vertical-align: top;
+	vertical-align: middle;
 }
 
 	/* MAIN listPostsView */
@@ -120,10 +111,6 @@ aside, section {
 
 .partition {
 	margin-top: 50px;
-}
-
-.paragraph {
-	text-align: justify;
 }
 
 #imgArticle, .imgParagraph {
@@ -195,4 +182,64 @@ aside, section {
 #findMe {
 	background-color: #98fb98;
 	margin-top: 40px;
+}
+
+/* VERSION TABLETTE */
+
+@media screen and (max-width: 1000px) {
+
+	header {
+		background-image: url("../images/backgroundPictureBis.JPG");
+	}
+
+	a, nav, h3, aside, section, small {
+		font-size: 3vw;
+	}
+
+	h1, h2 {
+		font-size: 5vw;
+	}
+
+	aside, section {
+		display: block;
+		width: 100%;
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 700px) {
+
+	header {
+		background-image: none;
+		background-color: #0000ff;
+	}
+
+	a, nav, h2, h3, aside, section, small {
+		font-size: 15px;
+	}
+
+	h1 {
+		font-size: 18px;
+	}
+
+	aside, section {
+		padding: 5px;
+	}
+
+	#title {
+		padding: 0.5em;
+	}
+
+	.location {
+		font-style: italic;
+	}
+
+	.read {
+		margin: 0  0 5px;
+	}
+
+	.divImg, #imgArticle {
+		display: block;
+		width: 100%;
+	}
 }

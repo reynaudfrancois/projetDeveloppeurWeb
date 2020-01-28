@@ -31,13 +31,13 @@
 	?>
 		<div class="abstractArticle">
 			<aside class="center">
-				<h3><?= $data["location"] . "<br /><em>" . $data["period"] . " </em>"?></h3>
+				<h3 class="location"><?= $data["location"] . "<br /><em>" . $data["period"] . " </em>"?></h3>
 				<img src="<?= $data['image'] ?>" alt="img<?= $data['id'] ?>" class="imgAbstract" />
 				<p><small><small><em>Mis en ligne : <?= $data["dated"] ?></em></small></small></p>
 			</aside>
 			<section class="center">
 				<h2><?= $data["title"] ?></h2>				
-				<article><?= $data["abstract"] ?></article>
+				<p class="justifyAlign"><?= $data["abstract"] ?></p>
 				<button class="read"><a <?= "href='index.php?action=postView&id=" . $data["id"] . "' class='readArticle'" ?> >Lire</a></button>
 			</section>
 		</div>

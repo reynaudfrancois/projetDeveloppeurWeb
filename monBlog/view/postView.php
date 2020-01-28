@@ -1,4 +1,4 @@
-<?php $title = "François REYNAUD - Récit de voyages"; ?>
+<?php $title = "François REYNAUD - Récit de randos"; ?>
 
 <?php ob_start(); ?>
 
@@ -20,7 +20,6 @@
 			<?= "<img id='imgArticle' src='" . $post["image"] . "' alt='image_" . $post["id"] . "' />" ?>
 		</div>
 
-		<!-- voir si je laisse les class "paragraph" et "imgParagraph" -->
 		<div class="partition">
 			<p class="paragraph"><?= $post["paragraph1"] ?></p>
 			<div class="center">
@@ -134,11 +133,11 @@
 			<p class="justifyAlign" id="nbComments"><em><strong><?=  $nbComments ?> commentaires</strong></em></p>
 	<?php 
 		}
-		while ($data=$reqAllComments->fetch()) {
+		while ($data = $reqAllComments->fetch()) {
 	?>
 			<hr />
-			<p class="justifyAlign"><strong><?= htmlspecialchars($data["firstname"]) . " " . htmlspecialchars($data["name"]) . "," ?></strong><?= " le " . htmlspecialchars($data["dateComment"]) ?></p>
-			<p class="justifyAlign"><?= htmlspecialchars($data["content"]) ?></p>
+			<p class="justifyAlign"><strong><?= $data["firstname"] . " " . $data["name"] . "," ?></strong><?= " le " . $data["dateComment"] ?></p>
+			<p class="justifyAlign"><?= $data["content"] ?></p>
 	<?php 
 		}
 		$reqAllComments->closeCursor();

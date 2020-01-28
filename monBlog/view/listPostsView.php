@@ -12,7 +12,7 @@
 		$nbPosts = nbPosts();
 		$nbPostsPerPage = nbPostsPerPage();
 		$nbPages = nbPages($nbPosts, $nbPostsPerPage);
-		for ($i=1 ; $i<=$nbPages ; $i++) {
+		for ($i = 1; $i <= $nbPages; $i++) {
 		?>
 			<a href="index.php?page=<?= $i ?>"><?= $i ?></a>
 		<?php
@@ -51,7 +51,7 @@
 	<nav>
 		PAGES :
 		<?php
-		for ($i=1 ; $i<=$nbPages ; $i++) {
+		for ($i = 1; $i <= $nbPages; $i++) {
 		?>
 			<a href="index.php?page=<?= $i ?>"><?= $i ?></a>
 		<?php

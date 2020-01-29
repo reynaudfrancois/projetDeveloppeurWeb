@@ -9,7 +9,7 @@
 		<div>
 			<button id="before"> < </button>
 			<div id="sliderContainer">
-				<img name="slide" src="../public/images/allImages/0.JPG" id="imgSlider" alt="Alpes du Sud" />
+				<img name="slide" src="../public/images/imgSlider/0.JPG" id="imgSlider" alt="Alpes du Sud" />
 			</div>
 			<button id="next"> > </button>
 			<h4 id="titleImage"></h4>

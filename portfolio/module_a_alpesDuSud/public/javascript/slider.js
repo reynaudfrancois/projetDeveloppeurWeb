@@ -10,7 +10,7 @@ var n = 34;
 var images = new Array(n);
 var i, j;
 for (i = 0; i < images.length; i++) {
-    j = "../public/images/allImages/" + i.toString() + ".JPG";
+    j = "../public/images/imgSlider/" + i.toString() + ".JPG";
     images[i] = j;
 }
 

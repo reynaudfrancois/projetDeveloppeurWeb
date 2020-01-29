@@ -1,1 +1,0 @@
-<p><a href=".//index.php?page=1">Rafraîchir</p>

@@ -77,7 +77,7 @@ $header = ob_get_clean();
 	}
 	?>
 
-	<img src="../public/images/imageDeFond.JPG" alt="Névé" />
+	<img src="../public/images/backgroundPicture.JPG" alt="Névé" />
 
 </main>	
 

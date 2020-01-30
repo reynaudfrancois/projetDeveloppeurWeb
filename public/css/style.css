@@ -1,15 +1,13 @@
 /* GENERAL */
 
 * {
-	/*-webkit-box-sizing: border-box;*/
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	outline: none;
 }
 
 html {
 	margin: auto;
-	/*overflow-y: scroll;
-	overflow-x: scroll;*/
  	scroll-behavior: smooth;
 }
 	
@@ -53,7 +51,6 @@ nav a {
 	color: blue;
 	background-color: rgb(175, 178, 173);
 	font-size: 1.2vw;
-	/*margin: 0;*/
 	padding: 10px;
 }
 
@@ -62,7 +59,6 @@ nav a {
 }
 
 #photo {
-	/*width: 220px;*/
 	height: 300px;
 	margin-top: 50px;
 	border-radius: 100%;
@@ -107,7 +103,6 @@ main em {
 	text-transform: uppercase;
 	width: 40%;
 	display: inline-block;
-	/*margin: 10px;*/
 }
 
 #training, #experience {
@@ -175,6 +170,8 @@ footer small {
 	padding-top: 10px;
 }
 
+/* MEDIUM SIZE SCREEN */
+
 @media screen and (max-width: 1000px) {
 
 	body {
@@ -185,8 +182,9 @@ footer small {
 		font-size: 10px;
 		padding: 1vw;
 	}
-
 }
+
+/* SMALL SIZE SCREEN */
 
 @media screen and (max-width: 500px) {
 
@@ -230,5 +228,4 @@ footer small {
 		height: auto;
 		margin: 10px 0;
 	}
-
 }

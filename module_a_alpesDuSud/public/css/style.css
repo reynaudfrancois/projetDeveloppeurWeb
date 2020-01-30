@@ -226,7 +226,7 @@ main img {
 	margin-top: 40px;
 }
 
-/* VERSION TABLETTE */
+/* MEDIUM SIZE SCREEN */
 
 @media screen and (max-width: 1250px) {
 	header {
@@ -234,6 +234,9 @@ main img {
 	}
 	p, ul, li, a, .proportionalFontSize, .storyParagraphTitle {
 		font-size: 2vw;
+	}
+	.generalTitle, .subTitle {
+		font-size: 2.5vw;
 	}
 	nav, nav a {
 		text-decoration: underline;
@@ -247,7 +250,7 @@ main img {
 }
 
 
-/* VERSION SMARTPHONE */
+/* SMALL SIZE SCREEN */
 
 @media screen and (max-width: 575px) {
 

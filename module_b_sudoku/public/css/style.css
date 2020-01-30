@@ -1,18 +1,14 @@
 /* GENERAL */
 
 * {
-	/*-webkit-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	outline: none;*/
+	outline: none;
 }
 
 html {
 	margin: auto;
 	width: 90%;
-}
-
-body {
-	/*font-size: 1rem;*/
 }
 
 footer, h1, h2, h3, td, #levelChoice {
@@ -130,9 +126,6 @@ tr:nth-child(3) td, tr:nth-child(6) td {
 }
 
 @media screen and (max-width: 625px) {
-	/*button {
-		display: block;
-	}*/
 	td {
 		width: 2rem;
 		height: 2rem;
@@ -143,5 +136,11 @@ tr:nth-child(3) td, tr:nth-child(6) td {
 	}
 	#checkBox {
 		margin: 0 20px 30px;
+	}
+	h1, h2 {
+		font-size: 15vw;
+	}
+	h3, label {
+		font-size: 9vw;
 	}
 }

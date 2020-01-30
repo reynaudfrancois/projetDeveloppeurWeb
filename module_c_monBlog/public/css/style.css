@@ -215,7 +215,7 @@ aside, section {
 	}
 
 	a, nav, h2, h3, aside, section, small {
-		font-size: 15px;
+		font-size: 12px;
 	}
 
 	h1 {
@@ -239,7 +239,9 @@ aside, section {
 	}
 
 	.divImg, #imgArticle {
-		display: block;
 		width: 100%;
+	}
+	.divImg {
+		display: block;
 	}
 }

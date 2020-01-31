@@ -3,7 +3,6 @@
 require "model/model.php";
 
 function listPostsView() {
-
 	function actualPage() {
 		$nbPostsPerPage = nbPostsPerPage();
 		$nbPosts = nbPosts();
@@ -16,23 +15,19 @@ function listPostsView() {
 		}
 		return $page;
 	}
-
 	function nbPostsPerPage() {
 		$nbPostsPerPage = 3;
 		return $nbPostsPerPage;
 	}
-
 	function firstPostDisplayed($nbPostsPerPage) {
 		$page = actualPage();
 		$firstPostDisplayed = $nbPostsPerPage*($page-1);
 		return $firstPostDisplayed;
 	}
-
 	function nbPages($nbPosts, $nbPostsPerPage) {
 		$nbPages=ceil($nbPosts/$nbPostsPerPage);
 		return $nbPages;
 	}
-
 	require "view/listPostsView.php";	
 }
 

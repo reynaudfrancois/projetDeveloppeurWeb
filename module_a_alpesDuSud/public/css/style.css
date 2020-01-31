@@ -1,7 +1,7 @@
 /*GENERAL*/
 
 * {
-	/*-webkit-box-sizing: border-box;*/
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	outline: none;
 }
@@ -9,11 +9,6 @@
 html {
 	margin: auto;
 	width : 90%;
-}
-
-body {
-	/*width: 100%;
-	margin: auto;*/
 }
 
 h1 {
@@ -249,7 +244,6 @@ main img {
 	}
 }
 
-
 /* SMALL SIZE SCREEN */
 
 @media screen and (max-width: 575px) {
@@ -298,5 +292,4 @@ main img {
 		height: 20px;
 		margin: 0;
 	}
-
 }

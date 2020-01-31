@@ -96,13 +96,13 @@ tr:nth-child(3) td, tr:nth-child(6) td {
 	margin: 10px;
 }
 
-	/* MAIN - COULEUR QUI MONTRE QUE LA CASE EST SELECTIONNEE */
+	/* MAIN - Couleur qui montre que la case est sélectionnée */
 
 #skyBlue {
 	background-color: #f0f8ff;
 }
 
-	/* MAIN - MESSAGES DE VALIDATION OU NON DE LA GRILLE COMPLETEE */
+	/* MAIN - Messages de validation ou non de la grille complétée */
 
 #gridOk {
 	display: none;
@@ -116,6 +116,8 @@ tr:nth-child(3) td, tr:nth-child(6) td {
 	color: #ff0000;
 }
 
+/* MEDIUM SCREEN WIDTH */
+
 @media screen and (max-width: 1000px) {
 	#gameRules, #explanation, #levelChoice {
 		margin: 0 10px 30px;
@@ -124,6 +126,8 @@ tr:nth-child(3) td, tr:nth-child(6) td {
 		margin: 0 200px 30px;
 	}
 }
+
+/* SMALL SCREEN WIDTH */
 
 @media screen and (max-width: 625px) {
 	td {

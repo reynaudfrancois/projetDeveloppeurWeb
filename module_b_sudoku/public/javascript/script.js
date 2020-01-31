@@ -188,8 +188,6 @@ function init(nbCasesEmpty) {
 
     function figureChoice() {
         var figure = parseInt(prompt("Entrez un chiffre"));
-        //JE N'ARRIVE PAS A ECRIRE LA LIGNE SUIVANTE PLUS SIMPLEMENT
-        //J'AI ESSAYE UN for MAIS CA NE FONCTIONNE PAS
         if (figure != 1 && figure != 2 && figure != 3 && figure != 4 && figure != 5 && figure != 6 && figure != 7 && figure != 8 && figure != 9) {
             alert("Veuillez entrer un chiffre entier allant de 1 à 9 compris !");
         } else {

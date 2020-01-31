@@ -108,7 +108,7 @@ aside, section {
 	margin-bottom: 10px;
 }
 
-	/* MAIN article */
+	/* MAIN postView */
 
 .partition {
 	margin-top: 50px;
@@ -185,7 +185,7 @@ aside, section {
 	margin-top: 40px;
 }
 
-/* VERSION TABLETTE */
+/* MEDIUM SIZE SCREEN */
 
 @media screen and (max-width: 1000px) {
 
@@ -207,6 +207,8 @@ aside, section {
 		margin: 0;
 	}
 }
+
+/* SMALL SIZE SCREEN */
 
 @media screen and (max-width: 700px) {
 

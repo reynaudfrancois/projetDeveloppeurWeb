@@ -99,12 +99,13 @@ aside, section {
 	height: auto;
 }
 
-.read {
-	margin-top: 30px;
-}
-
 .readArticle {
 	text-decoration: none;
+	background-color: #d3d3d3;
+	border: 1px solid #0000ff;
+	padding: 5px;
+	display: inline-block;
+	margin-bottom: 10px;
 }
 
 	/* MAIN article */

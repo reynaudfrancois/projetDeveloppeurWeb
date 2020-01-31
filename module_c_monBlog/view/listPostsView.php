@@ -38,7 +38,7 @@
 			<section class="center">
 				<h2><?= $data["title"] ?></h2>				
 				<p class="justifyAlign"><?= $data["abstract"] ?></p>
-				<button class="read"><a <?= "href='index.php?action=postView&id=" . $data["id"] . "' class='readArticle'" ?> >Lire</a></button>
+				<a <?= "href='index.php?action=postView&id=" . $data["id"] . "' class='readArticle'" ?> >Lire</a>
 			</section>
 		</div>
 	<?php

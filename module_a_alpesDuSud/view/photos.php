@@ -16,7 +16,6 @@
 			<h4 id="counterImage"></h4>			
 		</div>
 
-		<script src="../public/javascript/titleImages.js"></script>
 		<script src="../public/javascript/slider.js"></script>		
 
 	</div>

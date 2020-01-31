@@ -6,17 +6,20 @@ var error = document.getElementById("error");
 commentForm.style.display = "none";
 if (error.innerHTML.trim() != "") {
 	commentForm.style.display = "block";
-	faAngle.classList.replace("fa-angle-down", "fa-angle-up");
-    document.location.href += "#comments";
+	faAngle.classList.remove("fa-angle-down");
+    faAngle.classList.add("fa-angle-up");
+    document.location.href += "#error";
 }
 
 function openForm() {
     if (commentForm.style.display == "none") {
         commentForm.style.display = "block";
-        faAngle.classList.replace("fa-angle-down", "fa-angle-up");
+        faAngle.classList.remove("fa-angle-down");
+        faAngle.classList.add("fa-angle-up");
     } else {
         commentForm.style.display = "none";
-        faAngle.classList.replace("fa-angle-up", "fa-angle-down");
+        faAngle.classList.remove("fa-angle-up");
+        faAngle.classList.add("fa-angle-down");
     }
 }
 addComment.addEventListener("click", openForm);

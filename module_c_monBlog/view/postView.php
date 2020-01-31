@@ -106,6 +106,9 @@
 				<label for="content">Votre commentaire *</label><br />
 				<textarea id="content" rows="20px" cols="100px" name="content"></textarea>
 			</div>
+			<div id="errorBis" style="color: <?php if ($error != '') {echo 'red;';} ?>">
+				<?= $error ?>
+			</div>
 			<div id="required">
 				<strong>* Ces informations sont requises.</strong>
 			</div>

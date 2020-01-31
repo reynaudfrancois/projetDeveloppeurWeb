@@ -219,8 +219,12 @@ footer small {
 		margin-top: 0;
 	}
 
-	#portfolio div, nav {
+	nav {
 		flex-direction: column;
+	}
+
+	#portfolio div {
+		display: block;
 	}
 
 	#portfolio img {

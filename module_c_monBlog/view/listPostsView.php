@@ -2,7 +2,7 @@
 
 <?php ob_start(); ?>
 
-<?php include "header.inc.php"; ?>
+<?php require "header.inc.php"; ?>
 
 <main>
 
@@ -61,7 +61,7 @@
 
 </main>
 
-<?php include "footer.inc.php>"; ?>
+<?php require "footer.inc.php>"; ?>
 
 <?php $content = ob_get_clean(); ?>
 

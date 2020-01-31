@@ -2,7 +2,7 @@
 
 <?php ob_start(); ?>
 
-<?php require "header.inc.php"; ?>
+<?php include "header.inc.php"; ?>
 
 <main>
 
@@ -151,8 +151,8 @@
 
 </main>
 
-<?php require "footer.inc.php>"; ?>
+<?php include "footer.inc.php>"; ?>
 
 <?php $content = ob_get_clean(); ?>
 
-<?php require "template.php"; ?>
+<?php include "template.php"; ?>

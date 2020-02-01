@@ -25,7 +25,7 @@
 
 			<div id="title">
 				<h1>La traversée des Alpes Du Sud</h1>
-				<h2>1-21/6/2015</h2>
+				<h2>Du 1<sup>er</sup> au 21 juin 2015</h2>
 				<h3>par François REYNAUD</h3>
 			</div>
 

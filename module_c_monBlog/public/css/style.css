@@ -33,18 +33,11 @@ hr {
 
 a, nav {
 	font-size: 1.7rem;
-}
-
-a, nav, #nbComments {
 	color: #0000ff;
 }
 
 footer, h1, h2, h3, nav, .center, #comments {
 	text-align: center;
-}
-
-.justifyAlign, .paragraph {
-	text-align: justify;
 }
 
 /* HEADER */
@@ -67,6 +60,13 @@ main {
 	margin-top: 20px;
 }
 
+aside, section {
+	padding: 1% 50px;
+	font-size: 1.85rem;
+	display: inline-block;
+	vertical-align: middle;
+}
+
 aside {
 	width: 37%;
 	margin-left: 1%;
@@ -78,11 +78,8 @@ section {
 	margin-right: 1%;
 }
 
-aside, section {
-	padding: 1% 50px;
-	font-size: 1.85rem;
-	display: inline-block;
-	vertical-align: middle;
+.justifyAlign {
+	text-align: justify;
 }
 
 	/* MAIN listPostsView */

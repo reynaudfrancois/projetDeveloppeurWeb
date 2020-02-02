@@ -21,7 +21,7 @@
 		</div>
 
 		<div class="partition">
-			<p class="paragraph"><?= $post["paragraph1"] ?></p>
+			<p class="justifyAlign"><?= $post["paragraph1"] ?></p>
 			<div class="center">
 				<div class="divImg">
 					<?= "<img src='" . $post["image1"] . "' alt='image1_" . $post["id"] . "' class='imgParagraph' />" ?>
@@ -35,7 +35,7 @@
 		</div>
 
 		<div class="partition">
-			<p class="paragraph"><?= $post["paragraph2"] ?></p>
+			<p class="justifyAlign"><?= $post["paragraph2"] ?></p>
 			<div class="center">
 				<div class="divImg">
 					<?= "<img src='" . $post["image3"] . "' alt='image3_" . $post["id"] . "' class='imgParagraph' />" ?>
@@ -49,7 +49,7 @@
 		</div>
 
 		<div class="partition">
-			<p class="paragraph"><?= $post["paragraph3"] ?></p>
+			<p class="justifyAlign"><?= $post["paragraph3"] ?></p>
 			<div class="center">
 				<div class="divImg">
 					<?= "<img src='" . $post["image5"] . "' alt='image5_" . $post["id"] . "' class='imgParagraph' />" ?>
@@ -63,7 +63,7 @@
 		</div>
 
 		<div class="partition">
-			<p class="paragraph"><?= $post["paragraph4"] ?></p>
+			<p class="justifyAlign"><?= $post["paragraph4"] ?></p>
 			<div class="center">
 				<div class="divImg">
 					<?= "<img src='" . $post["image7"] . "' alt='image7_" . $post["id"] . "' class='imgParagraph' />" ?>

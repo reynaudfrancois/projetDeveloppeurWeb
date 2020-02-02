@@ -31,10 +31,13 @@ a {
 	background-color: rgb(146, 232, 146);
 }
 
+header, #training, #experience {
+	background-color: #4cc1ef;
+}
+
 /* HEADER */
 
 header {
-	background-color: #4cc1ef;
 	padding-bottom: 30px;
 }
 
@@ -75,16 +78,19 @@ nav a {
 
 /* MAIN */
 
-main h2 {
-	text-transform: uppercase;
-	margin-top: 0;
-	padding: 60px 0 50px;
-	color: #0000ff;
+main h2, #contact {
 	background-color: #d3d3d3;
 }
 
 main h3, main h4, main p {
 	margin: 10px;
+}
+
+main h2 {
+	text-transform: uppercase;
+	margin-top: 0;
+	padding: 60px 0 50px;
+	color: #0000ff;
 }
 
 main h3 {
@@ -106,7 +112,6 @@ main em {
 }
 
 #training, #experience {
-	background-color: #4cc1ef;
 	padding-bottom: 5px;
 }
 
@@ -135,7 +140,6 @@ main em {
 	/* MAIN #contact */
 
 #contact {
-	background-color: #d3d3d3;
 	padding-bottom: 15px;
 }
 

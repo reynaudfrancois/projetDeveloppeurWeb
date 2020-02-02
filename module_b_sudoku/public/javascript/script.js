@@ -134,7 +134,7 @@ function init(nbCasesEmpty) {
 
     html += "</div>";
 
-    html += "<div id='allButtons'>";
+    html += "<div id='gameButtons'>";
 
         html += "<button id='figureChoice' class='buttons'>";
         html += "Choisissez votre chiffre";
@@ -173,7 +173,7 @@ function init(nbCasesEmpty) {
     // étape 2 : on leur applique la fonction de sélection
 
     function selectBox() {
-        this.setAttribute("id", "skyBlue");
+        this.setAttribute("id", "selectedBox");
         for (i = 0; i < box.length; i++) {
             if (box[i] != this) {
                 (box[i]).removeAttribute("id");
@@ -192,7 +192,7 @@ function init(nbCasesEmpty) {
             alert("Veuillez entrer un chiffre entier allant de 1 à 9 compris !");
         } else {
             for (j = 0; j < box.length; j++) {
-                if ((box[j]).id == "skyBlue") {
+                if ((box[j]).id == "selectedBox") {
                     box[j].textContent = figure;
                     box[j].classList.remove("right");
                     box[j].classList.remove("false");
@@ -207,7 +207,7 @@ function init(nbCasesEmpty) {
 
     function figureClear() {
         for (j = 0; j < box.length; j++) {
-            if ((box[j]).id == "skyBlue") {
+            if ((box[j]).id == "selectedBox") {
                 box[j].textContent = "";
                 box[j].classList.remove("right");
                 box[j].classList.remove("false");
@@ -246,14 +246,14 @@ function init(nbCasesEmpty) {
 
     // étape 6 : on écrit la fonction de validation ou non de la grille une fois complétée
 
-    var allBox = document.querySelectorAll("td");
+    var allBoxes = document.querySelectorAll("td");
     var gridOk = document.getElementById("gridOk");
     var gridError = document.getElementById("gridError");
-    var allButtons = document.getElementById("allButtons");
+    var gameButtons = document.getElementById("gameButtons");
     function sendCompleteGrid() {
         var valid = true;
-        for (i = 0; i < allBox.length; i++) {
-            if (allBox[i].textContent == tableComplete[parseInt(i / 9)][i % 9]) {
+        for (i = 0; i < allBoxes.length; i++) {
+            if (allBoxes[i].textContent == tableComplete[parseInt(i / 9)][i % 9]) {
                 valid = true;
             } else {
                 valid = false;
@@ -264,7 +264,7 @@ function init(nbCasesEmpty) {
             verify();
             gridOk.style.display = "block";
             gridError.style.display = "none";
-            allButtons.style.display = "none";
+            gameButtons.style.display = "none";
             var refresh = document.getElementById("refresh");
             refresh.addEventListener("click", levelChoise);
         } else {

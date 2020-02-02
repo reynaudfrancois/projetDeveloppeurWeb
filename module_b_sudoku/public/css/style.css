@@ -11,7 +11,7 @@ html {
 	width: 90%;
 }
 
-footer, h1, h2, h3, td, #levelChoice {
+footer, h1, h2, h3, td, #levelChoice, #gridError, #gridOk, #gameButtons {
 	text-align: center;
 }
 
@@ -29,7 +29,7 @@ footer, h1, h2, h3, td, #levelChoice {
 
 	/* HEADER #explanation */
 
-.lightBlue {
+.selected {
 	color: #add8e6;
 }
 
@@ -60,7 +60,7 @@ footer, h1, h2, h3, td, #levelChoice {
 
 /* MAIN */
 
-	/* MAIN - Grille du Sudoku */
+	/* MAIN - Sudoku grid */
 
 table, td {
 	border: 1px solid #c0c0c0;
@@ -85,10 +85,9 @@ tr:nth-child(3) td, tr:nth-child(6) td {
 	border-bottom: 1px solid #0000ff;
 }
 
-	/* MAIN - Boutons de Jeu */
+	/* MAIN - Game buttons */
 
-#allButtons {
-	text-align: center;
+#gameButtons {
 	margin-top: 10px;
 }
 
@@ -96,23 +95,23 @@ tr:nth-child(3) td, tr:nth-child(6) td {
 	margin: 10px;
 }
 
-	/* MAIN - Couleur qui montre que la case est sélectionnée */
+	/* MAIN - Color that shows the box is selected */
 
-#skyBlue {
+#selectedBox {
 	background-color: #f0f8ff;
 }
 
-	/* MAIN - Messages de validation ou non de la grille complétée */
+	/* MAIN - Validation messages (or not) of the completed grid */
+
+#gridOk, #gridError {
+	display: none;
+}
 
 #gridOk {
-	display: none;
-	text-align: center;
 	color: #008000;
 }
 
 #gridError {
-	display: none;
-	text-align: center;
 	color: #ff0000;
 }
 

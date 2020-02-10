@@ -1,6 +1,6 @@
 <?php  
 ob_start();
-require"header.inc.php";
+require "header.inc.php";
 $header = ob_get_clean();
 ?>
 

@@ -1,5 +1,4 @@
 <?php
-
 require "../controller/commentsController.php";
 try {
 	if (isset($_GET["action"])) {

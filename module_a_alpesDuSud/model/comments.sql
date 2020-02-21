@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  mer. 29 jan. 2020 à 18:43
+-- Généré le :  ven. 21 fév. 2020 à 16:34
 -- Version du serveur :  10.4.10-MariaDB
 -- Version de PHP :  7.3.12
 
@@ -37,9 +37,7 @@ CREATE TABLE IF NOT EXISTS `message` (
   `content` text NOT NULL,
   `dated` datetime NOT NULL DEFAULT current_timestamp(),
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=138 DEFAULT CHARSET=utf8;
-
-COMMIT;
+) ENGINE=MyISAM AUTO_INCREMENT=149 DEFAULT CHARSET=utf8;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

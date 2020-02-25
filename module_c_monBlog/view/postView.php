@@ -18,6 +18,7 @@
 
 		<div class="center">
 			<?= "<img id='imgArticle' src='" . $post["image"] . "' alt='image_" . $post["id"] . "' />" ?>
+			<h4><?= $post["title_image"] ?></h4>
 		</div>
 
 		<div class="partition">

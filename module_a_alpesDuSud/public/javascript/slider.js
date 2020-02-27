@@ -5,7 +5,7 @@ nav.style.width = "100%";
 document.getElementById("title").style.display = "none";
 document.getElementById("blog").style.display = "none";
 
-var n = 77;
+var n = 100;
 
 var images = new Array(n);
 var i, j;
@@ -23,7 +23,9 @@ tableTitlesImages.push("Vacherie de Roubion", "Col des Moulines", "Mont Mounier 
 tableTitlesImages.push("Cime de la Bercha", "Saint-Dalmas-le-Selvage", "Vallon de Saint-Dalmas", "Vallon de Gialorgues", "Bousiéyas", "Ruines du Camp des Fourches", "Lac de derrière la Croix", "Descente sur névé", "Pas de la Cavale", "Sale temps pour marcher");
 tableTitlesImages.push("Larche", "Tête de Viraysse", "Haute vallée de l'Ubayette", "Fort de Mallemort", "Saint-Ours", "A l'attaque du Col de Mirandol", "Arrivée au Col de Mirandol", "Pont du Châtelet", "Haute vallée de l'Ubaye", "Mauvais temps de  retour");
 tableTitlesImages.push("Col Tronchet", "Cascade de la Pisse", "Anes", "Ceillac", "Bramousse", "En route vers Furfande", "Combe du Queyras", "Alpage de Furfande", "Refuge de Furfande", "Balcon de Furfande");
-tableTitlesImages.push("Hauts sommets du Queyras", "Chalets de Furfande", "Lac du Lauzet", "Vallée de la Durance", "Mont-Dauphin", "Le Guil en dessous de Guillestre", "Le Guil en dessous de Mont-Dauphin");
+tableTitlesImages.push("Hauts sommets du Queyras", "Chalets de Furfande", "Lac du Lauzet", "Vallée de la Durance", "Mont-Dauphin", "Le Guil en dessous de Guillestre", "Le Guil en dessous de Mont-Dauphin", "Grande rue de Mont-Dauphin", "Entrée Nord de Mont-Dauphin", "Sommets enneigés des Ecrins");
+tableTitlesImages.push("Fontaine pétrifiante", "Vallon du Fournel", "Mont Pelvoux en vue", "Pic de Clouzis", "Station de Puy-Saint-Vincent", "Vallouise", "Mont Pelvoux", "Face au Pelvoux", "Serre-Chevalier : Col de l'Eychauda", "Monêtier-les-Bains");
+tableTitlesImages.push("Vallée de la Guisane", "Montagne des Agneaux", "Grand Lac", "Le Galibier", "L'Aiguille Noire", "Vallée de l'Aiguille Noire", "Hameau de Geneuil","Valloire", "Arrivée à Valloire", "Photo d'arrivée");
 
 var titleImage = document.getElementById("titleImage");
 titleImage.innerHTML = tableTitlesImages[0];

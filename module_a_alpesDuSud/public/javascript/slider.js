@@ -5,7 +5,7 @@ nav.style.width = "100%";
 document.getElementById("title").style.display = "none";
 document.getElementById("blog").style.display = "none";
 
-var n = 34;
+var n = 51;
 
 var images = new Array(n);
 var i, j;
@@ -19,7 +19,9 @@ var i = 0;
 var tableTitlesImages = ["La traversée des Alpes du Sud - Du 1er au 21 juin 2015", "Départ : port de Monaco", "Rocher et Palais Princier", "Monaco et le Cap Martin", "La Turbie", "Mont Agel", "Peillon", "Peille", "Crépuscule sur l'Arrière-Pays Niçois", "Col du Farguet"];
 tableTitlesImages.push("Sospel", "Bivouac", "Pause à Moulinet", "Panorama sur l'Arrière-Pays Niçois", "Vallée de la Vésubie", "La Bollène-Vésubie", "Village de Belvédère", "Venanson", "Saint-Martin-Vésubie", "Aurore sur la Vésubie");
 tableTitlesImages.push("Vallon de Bramafam", "Rimplas", "Petite pause", "Saint-Sauveur-sur-Tinée", "Roure", "Vallée de la Tinée", "Plateau de Longon", "Vallon de Vionène", "Hameau de Vignols", "Mont Longon");
-tableTitlesImages.push("Vacherie de Roubion", "Col des Moulines", "Mont Mounier - Versant Sud", "Mont Mounier - Versant Nord");
+tableTitlesImages.push("Vacherie de Roubion", "Col des Moulines", "Mont Mounier - Versant Sud", "Mont Mounier - Versant Nord", "Roya", "Vallon de Roya", "Cime de Las Donnas", "Auron", "Saint-Etienne-de-Tinée", "Aurore sur la Tinée");
+tableTitlesImages.push("Cime de la Bercha", "Saint-Dalmas-le-Selvage", "Vallon de Saint-Dalmas", "Vallon de Gialorgues", "Bousiéyas", "Ruines du Camp des Fourches", "Lac de derrière la Croix", "Descente sur névé", "Pas de la Cavale", "Sale temps pour marcher");
+tableTitlesImages.push("Larche");
 
 var titleImage = document.getElementById("titleImage");
 titleImage.innerHTML = tableTitlesImages[0];

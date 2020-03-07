@@ -30,7 +30,7 @@ footer, h1, h2, h3, td, #levelChoice, #gridError, #gridOk, #gameButtons {
 	/* HEADER #explanation */
 
 .selected {
-	color: #add8e6;
+	color: #f0c300;
 }
 
 .empty {
@@ -98,7 +98,7 @@ tr:nth-child(3) td, tr:nth-child(6) td {
 	/* MAIN - Color that shows the box is selected */
 
 #selectedBox {
-	background-color: #f0f8ff;
+	background-color: #ffff00;
 }
 
 	/* MAIN - Validation messages (or not) of the completed grid */

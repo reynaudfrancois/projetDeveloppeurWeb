@@ -58,7 +58,7 @@ function postComment ($postId, $name, $firstname, $email, $content) {
 
 function dbConnect() {
 	try {
-		$db  = new PDO("mysql:host=localhost;dbname=blog;charset=utf8", "freynaut", "admin2018");
+		$db  = new PDO("mysql:host=localhost;dbname=francoi3_blog;charset=utf8", "francoi3", "F9WOuR;)7u9lx8");
 		return $db;
 	}
 	catch(Exception $e) {

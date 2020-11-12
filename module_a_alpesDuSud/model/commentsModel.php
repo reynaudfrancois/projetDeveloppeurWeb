@@ -25,7 +25,7 @@ function displayComments () {
 
 function dbConnect() {
 	try {
-		$db  = new PDO("mysql:host=localhost;dbname=francoi3_comments;charset=utf8", "francoi3", "F9WOuR;)7u9lx8");
+		$db  = new PDO("mysql:host=localhost;dbname=francoi3_comments;charset=utf8", "francoi3", "Montm@ckinley6190");
 		return $db;
 	} catch(Exception $e) {
 		die("Erreur : ".$e->getMessage());		

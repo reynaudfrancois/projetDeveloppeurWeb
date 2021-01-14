@@ -1,0 +1,20 @@
+/*
+ Theme Name:   Sparkling Child
+ Template:     sparkling
+*/
+
+.entry-date {
+	color: blue;
+}
+
+.menu-item {
+	font-weight: bold;
+}
+
+.navbar-brand {
+	font-size: 30px !important;
+}
+
+.read-more {
+	font-weight: bold;
+}
